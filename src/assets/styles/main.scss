@@ -1,0 +1,9 @@
+@import "./global";
+@import "./theme";
+@import "./typography";
+@import "./mixins";
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
