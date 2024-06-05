@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sora: ["Sora", "sans-serif"],
       },
+      colors: {
+        primary: "var(--primaryColor)",
+      },
     },
   },
   plugins: [],
