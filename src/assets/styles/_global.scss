@@ -35,3 +35,11 @@
     }
   }
 }
+
+.skill-item {
+  &:hover {
+    img {
+      filter: invert(100%);
+    }
+  }
+}
