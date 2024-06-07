@@ -21,11 +21,13 @@ const HeroSection = () => {
               />{" "}
               I'am{" "}
             </div>
-            <div className="text-4xl font-extrabold">Muhammad Nameer</div>
+            <div className="text-4xl font-extrabold cursor-pointer">Muhammad Nameer</div>
             <div className="text-4xl font-medium">
               <TypeAnimation
                 sequence={[
                   "Software Engineer",
+                  2000,
+                  "Frontend Developer",
                   2000,
                   "Full Stack Developer",
                   2000,
@@ -38,10 +40,10 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="about text-zinc-500">
-            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to specimen book.
+            Holding a BSCS degree from NED University, I specialize in frontend
+            development and am now venturing into full stack capabilities. I
+            thrive on creating exceptional digital experiences and am open to
+            new freelance collaborations to showcase my expanding expertise.
           </div>
           <div className="socials flex gap-3 items-center">
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
