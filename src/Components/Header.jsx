@@ -8,7 +8,6 @@ const Header = () => {
       </div>
       <div className="nav-items flex gap-6 items-center flex-1 justify-center font-semibold">
         <div className=" cursor-pointer">Skills</div>
-        <div className=" cursor-pointer">Education</div>
         <div className=" cursor-pointer">Experience</div>
         <div className=" cursor-pointer">Work</div>
         <div className=" cursor-pointer">Achievements</div>
