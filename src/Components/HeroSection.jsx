@@ -65,7 +65,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div>
-        <Marquee className="border-y-2 border-black p-3 bg-black text-white">
+        <Marquee className="border-y-2 border-black p-3 bg-black text-white  ">
           <p className="flex gap-2">
             <img width={20} src={shinewhite} alt="" /> HTML{" "}
             <img width={20} src={shinewhite} alt="" /> CSS{" "}
@@ -108,7 +108,10 @@ const HeroSection = () => {
             <img width={20} src={shinewhite} alt="" /> MS OFFICE{" "}
           </p>
         </Marquee>
-        <Marquee direction="right" className="border-y-2 border-black p-3">
+        <Marquee
+          direction="right"
+          className="border-y-2 border-black p-3  bg-white"
+        >
           <p className="flex gap-2">
             <img width={20} src={shineblack} alt="" /> HTML{" "}
             <img width={20} src={shineblack} alt="" /> CSS{" "}
