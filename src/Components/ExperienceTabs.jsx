@@ -1,8 +1,14 @@
-import { FiBarChart, FiBell, FiDollarSign, FiPlay } from "react-icons/fi";
+/* eslint-disable react/no-unescaped-entities */
+import { FiBarChart, FiBell, FiPlay } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./useWindowSize";
 import { useState } from "react";
-
+import one from "../assets/images/1.jpg";
+import two from "../assets/images/2.jpg";
+import three from "../assets/images/3.jpg";
+import five from "../assets/images/5.jpg";
+import four from "../assets/images/4.jpg";
+import six from "../assets/images/6.jpg";
 const ExperienceTabs = () => {
   const [open, setOpen] = useState(items[0].id);
 
@@ -16,7 +22,7 @@ const ExperienceTabs = () => {
               open={open}
               setOpen={setOpen}
               id={item.id}
-              Icon={item.Icon}
+              Icon={item.id}
               title={item.title}
               imgSrc={item.imgSrc}
               description={item.description}
@@ -28,6 +34,7 @@ const ExperienceTabs = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
   const { width } = useWindowSize();
   const isOpen = open === id;
@@ -48,7 +55,7 @@ const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
         </span>
         <span className="block lg:hidden text-xl font-light">{title}</span>
         <div className="w-6 lg:w-full aspect-square bg-black text-white grid place-items-center">
-          <Icon />
+          {Icon}
         </div>
         <span className="w-4 h-4 bg-white group-hover:bg-slate-50 transition-colors border-r-[1px] border-b-[1px] lg:border-b-0 lg:border-t-[1px] border-slate-200 rotate-45 absolute bottom-0 lg:bottom-[50%] right-[50%] lg:right-0 translate-y-[50%] translate-x-[50%] z-20" />
       </button>
@@ -100,7 +107,7 @@ const panelVariants = {
 const panelVariantsSm = {
   open: {
     width: "100%",
-    height: "200px",
+    height: "250px",
   },
   closed: {
     width: "100%",
@@ -120,8 +127,80 @@ const descriptionVariants = {
 };
 
 const desc1 = (
-  <div className="rounded bg-black text-white p-3 w-full">
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-2xl font-semibold">Software Engineer @Hashcore</div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      Nov 2023 - Present
+    </div>
+    <div className="text-slate-400 ">
+      I develop blockchain-based products using the MERN stack and Redux, create
+      frontend dApps, and manage project repositories and deployments while
+      continuously enhancing my blockchain and full stack development skills.
+    </div>
+  </div>
+);
+const desc2 = (
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-2xl font-semibold">Frontend Developer @Stallyons</div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      Sep 2023 - Nov 2023
+    </div>
+    <div className="text-slate-400 ">
+      Created complex frontend applications using React.js and Redux, including
+      social media platforms, and had experience working with Webflow and
+      WordPress.
+    </div>
+  </div>
+);
+const desc3 = (
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-2xl font-semibold">Frontend Developer @Pluton.ltd</div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      May 2023 - Sep 2023
+    </div>
+    <div className="text-slate-400 ">
+      Created complex frontend applications using React.js and Redux, including
+      frontend dapps for blockchain products, and utilized my WordPress skills
+      too.
+    </div>
+  </div>
+);
+const desc4 = (
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-2xl font-semibold">Frontend Developer @TheFourC's</div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      Oct 2021 - Oct 2022
+    </div>
+    <div className="text-slate-400 ">
+      Created multiple websites for clients nationally and internationally using
+      React and wordPress
+    </div>
+  </div>
+);
+const desc5 = (
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-2xl font-semibold">Freelance Developer</div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      Oct 2020 - Present
+    </div>
+    <div className="text-slate-400 ">
+      Satisfied multiple clients from all over the globe with my expertise in
+      Full Stack Development using MERN Stack with modern development tools. I
+      love providing solutions to my client's problems.
+    </div>
+  </div>
+);
+const desc6 = (
+  <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-2xl font-semibold">
+      IT Trainer @PIMS Computer Institute
+    </div>
+    <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
+      May 2022 - Dec 2023
+    </div>
+    <div className="text-slate-400 ">
+    Trained numerous tech enthusiasts in IT skills ranging from basic to advanced, including MS Office, Photoshop, WordPress, web development, freelancing, and more.
+    </div>
   </div>
 );
 
@@ -129,37 +208,44 @@ const items = [
   {
     id: 1,
     title: "Software Engineer @Hashcore",
-    Icon: FiDollarSign,
-    imgSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Sft2f_FFPCVQ0qawB9f2AomuPQmxxtut8z_O6NChe9kWvJ6wSf6dk4yBci4fyalUdcQ&usqp=CAU",
+    Icon: 1,
+    imgSrc: one,
     description: desc1,
     //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
   {
     id: 2,
-    title: "Frontend Developer @Stallyons",
+    title: "Freelance Developer",
     Icon: FiPlay,
-    imgSrc:
-      "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+    imgSrc: five,
+    description: desc5,
   },
   {
     id: 3,
-    title: "Frontend Developer @Pluton.ltd",
-    Icon: FiBell,
-    imgSrc:
-      "https://images.unsplash.com/photo-1578450671530-5b6a7c9f32a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+    title: "Frontend Developer @Stallyons",
+    Icon: FiPlay,
+    imgSrc: four,
+    description: desc2,
   },
   {
     id: 4,
+    title: "IT Trainer @PIMS",
+    Icon: FiPlay,
+    imgSrc: six,
+    description: desc6,
+  },
+  {
+    id: 5,
+    title: "Frontend Developer @Pluton.ltd",
+    Icon: FiBell,
+    imgSrc: two,
+    description: desc3,
+  },
+  {
+    id: 6,
     title: "Frontend Developer @TheFourC's",
     Icon: FiBarChart,
-    imgSrc:
-      "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+    imgSrc: three,
+    description: desc4,
   },
 ];

@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceTabs from "./ExperienceTabs";
 
 const Experience = () => {
