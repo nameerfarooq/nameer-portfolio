@@ -6,23 +6,21 @@ const Project = ({ data, id, reversed }) => {
   const { image, title, description, link } = data;
   return (
     <div
-      className={`max-w-6xl mx-auto ${
+      className={`max-w-6xl mx-auto my-[80px] ${
         reversed ? "flex flex-row-reverse" : "flex"
-      } gap-12 max-md:flex-wrap items-center p-4 `}
+      } gap-12 flex items-center p-4 sm:p-0 `}
     >
-      <div className="rounded-3xl  h-auto md:flex-1">
+      <div className="rounded-3xl  h-auto w-6/12">
         <Card image={image} />
       </div>
-      <div className="flex flex-col  gap-6 md:flex-1">
-        <div className="font-sora font-extrabold text-5xl">
-          {id ? id : null}
-        </div>
+      <div className="flex flex-col  gap-6 w-6/12">
+        <div className="font-sora font-bold text-5xl">0{id ? id : null}</div>
         <div className="font-sora font-bold text-4xl">
           {title ? title : null}
         </div>
         <div className="text-zinc-500">{description ? description : null}</div>
         {link ? (
-          <a href="https://facebook.com" target="_blank">
+          <a href={link} target="_blank">
             <img
               src={readMore}
               alt="Read More"

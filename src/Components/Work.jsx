@@ -3,8 +3,15 @@ import imageforProject from "../assets/images/a.jpeg";
 const projectsArray = [
   {
     image: imageforProject,
-    title: "Real Estate App",
-    description: "lorem ipsum ehehehehhehe",
+    title: "Bytemates",
+    description:
+      "Bytemates is a software house, I have developed their website using wordpress, Elementor, slider revolution, and my photoShop skills.",
+    link: "https://bytemates.com/",
+  },
+  {
+    image: imageforProject,
+    title: "Greener Pakistan",
+    description: "Greener Pakistan is a team of Solar energy specialists, They provide all kind of solar solutions",
     link: "greener.com.pk",
   },
   {
@@ -20,17 +27,15 @@ const Work = () => {
       <p className="text-4xl mt-16 mb-32 text-center text-white">
         My <span className="font-extrabold">Work</span>
       </p>
-      <div className="flex flex-col gap-28 items-center">
-        {projectsArray.length > 0 &&
-          projectsArray.map((project, id) => (
-            <Project
-              data={project}
-              key={id}
-              id={id + 1}
-              reversed={id % 2 !== 0}
-            />
-          ))}
-      </div>
+      {projectsArray.length > 0 &&
+        projectsArray.map((project, id) => (
+          <Project
+            data={project}
+            key={id}
+            id={id + 1}
+            reversed={id % 2 !== 0}
+          />
+        ))}
     </div>
   );
 };

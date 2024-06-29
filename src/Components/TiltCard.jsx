@@ -61,7 +61,7 @@ const TiltCard = ({ image }) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-[340px] w-[500px] max-sm:w-[270px] rounded-xl"
+      className="relative h-[400px] w-[500px] max-sm:w-[270px] max-sm:h-[200px] rounded-xl"
     >
       <div
         style={{
