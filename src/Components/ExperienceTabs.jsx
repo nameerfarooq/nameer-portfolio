@@ -9,6 +9,7 @@ import three from "../assets/images/3.jpg";
 import five from "../assets/images/5.jpg";
 import four from "../assets/images/4.jpg";
 import six from "../assets/images/6.jpg";
+import background from "../assets/images/background.jpg";
 const ExperienceTabs = () => {
   const [open, setOpen] = useState(items[0].id);
 
@@ -199,7 +200,9 @@ const desc6 = (
       May 2022 - Dec 2023
     </div>
     <div className="text-slate-400 ">
-    Trained numerous tech enthusiasts in IT skills ranging from basic to advanced, including MS Office, Photoshop, WordPress, web development, freelancing, and more.
+      Trained numerous tech enthusiasts in IT skills ranging from basic to
+      advanced, including MS Office, Photoshop, WordPress, web development,
+      freelancing, and more.
     </div>
   </div>
 );
@@ -209,7 +212,7 @@ const items = [
     id: 1,
     title: "Software Engineer @Hashcore",
     Icon: 1,
-    imgSrc: one,
+    imgSrc: background,
     description: desc1,
     //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
@@ -217,35 +220,35 @@ const items = [
     id: 2,
     title: "Freelance Developer",
     Icon: FiPlay,
-    imgSrc: five,
+    imgSrc: background,
     description: desc5,
   },
   {
     id: 3,
     title: "Frontend Developer @Stallyons",
     Icon: FiPlay,
-    imgSrc: four,
+    imgSrc: background,
     description: desc2,
   },
   {
     id: 4,
     title: "IT Trainer @PIMS",
     Icon: FiPlay,
-    imgSrc: six,
+    imgSrc: background,
     description: desc6,
   },
   {
     id: 5,
     title: "Frontend Developer @Pluton.ltd",
     Icon: FiBell,
-    imgSrc: two,
+    imgSrc: background,
     description: desc3,
   },
   {
     id: 6,
     title: "Frontend Developer @TheFourC's",
     Icon: FiBarChart,
-    imgSrc: three,
+    imgSrc: background,
     description: desc4,
   },
 ];
