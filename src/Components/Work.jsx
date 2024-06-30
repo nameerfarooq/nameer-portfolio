@@ -87,6 +87,13 @@ const projectsArray = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
   },
+  {
+    image: imageforProject,
+    title: "Reservations Dashboard UI",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+    link: "https://reservation-dashboard.netlify.app/",
+  },
 ];
 const Work = () => {
   return (
