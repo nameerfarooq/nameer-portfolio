@@ -14,13 +14,17 @@ const Project = ({ data, id, reversed }) => {
         <Card image={image} />
       </div>
       <div className="flex flex-col  gap-6 w-6/12">
-        <div className="font-sora font-bold text-5xl">0{id ? id : null}</div>
+        <div className="font-sora font-bold text-5xl">
+          {id < 10 ? 0 : null}
+          {id ? id : null}
+        </div>
         <div className="font-sora font-bold text-4xl">
           {title ? title : null}
         </div>
         <div className="text-zinc-500">{description ? description : null}</div>
         {link ? (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" className="flex gap-3 items-center">
+            <div className="underline">Live Link</div>
             <img
               src={readMore}
               alt="Read More"

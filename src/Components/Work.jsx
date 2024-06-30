@@ -5,20 +5,87 @@ const projectsArray = [
     image: imageforProject,
     title: "Bytemates",
     description:
-      "Bytemates is a software house, I have developed their website using wordpress, Elementor, slider revolution, and my photoShop skills.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
     link: "https://bytemates.com/",
   },
   {
     image: imageforProject,
     title: "Greener Pakistan",
-    description: "Greener Pakistan is a team of Solar energy specialists, They provide all kind of solar solutions",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
     link: "greener.com.pk",
   },
   {
     image: imageforProject,
     title: "Real Estate App",
-    description: "lorem ipsum ehehehehhehe",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
     link: "greener.com.pk",
+  },
+  {
+    image: imageforProject,
+    title: "Artizia.io",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
+    link: "greener.com.pk",
+  },
+  {
+    image: imageforProject,
+    title: "Zero Swap",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
+    link: "swap.zeroliquid.xyz",
+  },
+  {
+    image: imageforProject,
+    title: "The NIC",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
+    link: "https://thenic.se/",
+  },
+  {
+    image: imageforProject,
+    title: "FYP Manager",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
+    link: "https://thenic.se/",
+  },
+  {
+    image: imageforProject,
+    title: "Tradepedia",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+
+    link: "https://tradepedia.io/",
+  },
+  {
+    image: imageforProject,
+    title: "Encirkel",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+  },
+  {
+    image: imageforProject,
+    title: "Noori Mission",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+  },
+  {
+    image: imageforProject,
+    title: "TFC",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+  },
+  {
+    image: imageforProject,
+    title: "News Monkey",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
   },
 ];
 const Work = () => {
