@@ -45,55 +45,55 @@ const projectsArray = [
     image: imageforProject,
     title: "Zero Swap",
     description:
-      "ZeroSwap is a dapp which is used for exchanging tokens with the concept of self reapaying over time. I Built this products frontend using React Js and Scss. During development of this product, I learnt many things about web3 and learn how to integrate smart contracts with our frontend dapps",
+      "ZeroSwap is a dapp which is used for exchanging tokens with the concept of self reapaying by the time. I Built this product's frontend using React Js and Scss. During development of this product, I learnt many things about web3 and learnt how to integrate smart contracts with our frontend dapps",
 
     link: "https://swap.zeroliquid.xyz/",
   },
   {
     image: imageforProject,
-    title: "The NIC",
+    title: "NORRBOTTENS ISLAMISKA CENTER",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "Norrbottens Islamiska Center represents a Muslim community living in the northern county of Sweden, Norrbotten., they are raising funds for the new project of builting a masjid in sweden, I have crafted thier website using Wordpress, Elementor.",
 
     link: "https://thenic.se/",
   },
   {
     image: imageforProject,
-    title: "FYP Manager",
+    title: "PMBOTICS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "PMBOTICS is my final year project during which i created during last two semesters of my graduation, This project was proposed to solve the hurdles and difficulties of universities which they face while managing student's FYP's. This project handles all stages of a FYP from initiating a project, managing milestones, creating sprint, creating tasks and awarding scores to students. to use this system as a supervisor use these credentials, username: nameerfaooq18@gmail.com, password:abcabcabc",
 
-    link: "https://thenic.se/",
+    link: "https://pmbotics.netlify.app/",
   },
   {
     image: imageforProject,
     title: "Encirkel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "Encirkel is a Digital Marketing agency based in sweden, They provide services for website developement, Graphics designig, branding and social media marketing globally, They always trust me for their every project related to web development.",
   },
   {
     image: imageforProject,
     title: "Noori Mission",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "Noori Mission is a platform for teaching Quranic education globally via online platforms, I built their website so they could reach more students through their online presence.",
   },
   {
     image: imageforProject,
     title: "TFC",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "TFC is a company, providing CCTV cameras, fire fighting solutions and emergency alarm solutions to their clients, I built their website using HTML, CSS and Javascript",
   },
   {
     image: imageforProject,
     title: "News Monkey",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "News Monkey is one of my favourite project, I built this when i was learing react Js, I loved to make components, render them conditionaly and used NEWS API for free news results from all over the world",
   },
   {
     image: imageforProject,
     title: "Reservations Dashboard UI",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates aspernatur tenetur facilis neque explicabo libero, molestias debitis error obcaecati perferendis numquam at provident animi sequi consequuntur odio, assumenda illo!",
+      "This was a very simple project, I made it for an interview",
     link: "https://reservation-dashboard.netlify.app/",
   },
 ];
