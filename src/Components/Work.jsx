@@ -82,18 +82,19 @@ const projectsArray = [
     title: "TFC",
     description:
       "TFC is a company, providing CCTV cameras, fire fighting solutions and emergency alarm solutions to their clients, I built their website using HTML, CSS and Javascript",
+    link: "https://nameerfarooq.github.io/TFC-Project3/",
   },
   {
     image: imageforProject,
     title: "News Monkey",
     description:
       "News Monkey is one of my favourite project, I built this when i was learing react Js, I loved to make components, render them conditionaly and used NEWS API for free news results from all over the world",
+    link: "https://github.com/nameerfarooq/newsMonkey",
   },
   {
     image: imageforProject,
     title: "Reservations Dashboard UI",
-    description:
-      "This was a very simple project, I made it for an interview",
+    description: "This was a very simple project, I made it for an interview",
     link: "https://reservation-dashboard.netlify.app/",
   },
 ];
