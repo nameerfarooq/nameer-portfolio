@@ -29,15 +29,15 @@ const projectsArray = [
       "Greener Pakistan is a group of solar energy experts offering a wide range of solar energy solutions, including underground cabling services. I developed their website using React JS, SCSS, and Framer Motion.",
     link: "https://greener.com.pk/",
   },
+
   {
-    image: realEstate,
-    title: "Real Estate App",
+    image: tradepedia,
+    title: "Tradepedia",
     description:
-      "As I transition from frontend to full stack development, I believe in learning by doing. To hone my skills, I followed a YouTube tutorial and created a stunning full stack real estate website using the MERN stack, Tailwind css, and Firebase.",
+      "Tradepedia is a company that provides guidance on trading. During my job, I worked on building part of their website, which includes exciting features like RTL (right-to-left) support and language translation.",
 
-    link: "https://city-estate.onrender.com/",
+    link: "https://tradepedia.io/",
   },
-
   {
     image: artizia,
     title: "Artizia.io",
@@ -47,12 +47,12 @@ const projectsArray = [
     link: "http://artizia.io/",
   },
   {
-    image: tradepedia,
-    title: "Tradepedia",
+    image: realEstate,
+    title: "Real Estate App",
     description:
-      "Tradepedia is a company that provides guidance on trading. During my job, I worked on building part of their website, which includes exciting features like RTL (right-to-left) support and language translation.",
+      "As I transition from frontend to full stack development, I believe in learning by doing. To hone my skills, I followed a YouTube tutorial and created a stunning full stack real estate website using the MERN stack, Tailwind css, and Firebase.",
 
-    link: "https://tradepedia.io/",
+    link: "https://city-estate.onrender.com/",
   },
   {
     image: zeroswap,
@@ -96,6 +96,7 @@ const projectsArray = [
     title: "Noori Mission",
     description:
       "Noori Mission is a platform for teaching Quranic education globally via online platforms, I built their website so they could reach more students through their online presence.",
+    link: "https://noorimission.net/",
   },
   {
     image: tfc,
