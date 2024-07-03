@@ -1,11 +1,10 @@
-import React from "react";
-import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaBehance, FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import shineblack from "../assets/icons/shineblack.png";
-import shineblue from "../assets/icons/shineblue.png";
 import shinewhite from "../assets/icons/shinewhite.png";
 import hero from "../assets/hero.mp4";
 import { TypeAnimation } from "react-type-animation";
+import { FaUpwork, FaXTwitter } from "react-icons/fa6";
 const HeroSection = () => {
   return (
     <>
@@ -21,7 +20,9 @@ const HeroSection = () => {
               />{" "}
               I'am{" "}
             </div>
-            <div className="text-4xl font-extrabold cursor-pointer">Muhammad Nameer</div>
+            <div className="text-4xl font-extrabold cursor-pointer">
+              Muhammad Nameer
+            </div>
             <div className="text-4xl font-medium">
               <TypeAnimation
                 sequence={[
@@ -30,6 +31,8 @@ const HeroSection = () => {
                   "Frontend Developer",
                   2000,
                   "Full Stack Developer",
+                  2000,
+                  "Occasional Graphics Designer",
                   2000,
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 30 }}
@@ -58,9 +61,17 @@ const HeroSection = () => {
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
               <FaWhatsapp />
             </div>
+           
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+              <FaXTwitter />
+            </div>
+         
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+              <FaBehance />
+            </div>
           </div>
         </div>
-        <div className="flex items-center w-3/5 justify-center mx-auto">
+        <div className="flex items-center flex-1 justify-center mx-auto">
           <video autoPlay loop muted>
             <source src={hero} type="video/mp4" />
           </video>

@@ -13,9 +13,14 @@ import noorimission from "../assets/images/noorimission.webp";
 import bytemates from "../assets/images/BYTE.webp";
 import thenic from "../assets/images/thenic.webp";
 import encirkel from "../assets/images/ENCIRKEL.webp";
-import { useState } from "react";
+import noorigd from "../assets/images/NOORIGD.webp";
+import bytematesgd from "../assets/images/BYTEMATESGD.webp";
+import pimsgd from "../assets/images/PIMSGD.webp";
+import { useEffect, useState } from "react";
+import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
   {
+    category: "web",
     image: bytemates,
     title: "Bytemates",
     description:
@@ -23,6 +28,7 @@ const projectsArray = [
     link: "https://bytemates.com/",
   },
   {
+    category: "web",
     image: greener,
     title: "Greener Pakistan",
     description:
@@ -31,6 +37,7 @@ const projectsArray = [
   },
 
   {
+    category: "web",
     image: tradepedia,
     title: "Tradepedia",
     description:
@@ -39,6 +46,7 @@ const projectsArray = [
     link: "https://tradepedia.io/",
   },
   {
+    category: "web",
     image: artizia,
     title: "Artizia.io",
     description:
@@ -47,6 +55,7 @@ const projectsArray = [
     link: "http://artizia.io/",
   },
   {
+    category: "web",
     image: realEstate,
     title: "Real Estate App",
     description:
@@ -55,6 +64,7 @@ const projectsArray = [
     link: "https://city-estate.onrender.com/",
   },
   {
+    category: "web",
     image: zeroswap,
     title: "Zero Swap",
     description:
@@ -63,6 +73,7 @@ const projectsArray = [
     link: "https://swap.zeroliquid.xyz/",
   },
   {
+    category: "web",
     image: thenic,
     title: "NORRBOTTENS ISLAMISKA CENTER",
     description:
@@ -71,6 +82,7 @@ const projectsArray = [
     link: "https://thenic.se/",
   },
   {
+    category: "web",
     image: pmbotics,
     title: "PMBOTICS",
     description:
@@ -79,12 +91,14 @@ const projectsArray = [
     link: "https://pmbotics.netlify.app/",
   },
   {
+    category: "web",
     image: encirkel,
     title: "Encirkel",
     description:
       "Encirkel is a Digital Marketing agency based in sweden, They provide services for website developement, Graphics designig, branding and social media marketing globally, They always trust me for their every project related to web development.",
   },
   {
+    category: "web",
     image: nuala,
     title: "Transitions Holistic Wellbeing",
     description:
@@ -92,6 +106,7 @@ const projectsArray = [
     link: "https://transitionsholisticwellbeing.com/",
   },
   {
+    category: "web",
     image: noorimission,
     title: "Noori Mission",
     description:
@@ -99,6 +114,7 @@ const projectsArray = [
     link: "https://noorimission.net/",
   },
   {
+    category: "web",
     image: tfc,
     title: "TFC",
     description:
@@ -106,6 +122,7 @@ const projectsArray = [
     link: "https://nameerfarooq.github.io/TFC-Project3/",
   },
   {
+    category: "web",
     image: newsmonkey,
     title: "News Monkey",
     description:
@@ -113,21 +130,88 @@ const projectsArray = [
     link: "https://github.com/nameerfarooq/newsMonkey",
   },
   {
+    category: "web",
     image: dashboard,
     title: "Reservations Dashboard UI",
     description: "This was a very simple project, I made it for an interview",
     link: "https://reservation-dashboard.netlify.app/",
   },
+  {
+    category: "design",
+    image: bytematesgd,
+    title: "Designing for ByteMates",
+    description:
+      "Bytemates is my recurring client, they always trust me weather they want a website or social media posters for their pages, I sometime design posters for them",
+    link: "https://www.facebook.com/bytemates/",
+  },
+  {
+    category: "design",
+    image: pimsgd,
+    title: "Designing for PIMS",
+    description:
+      "PIMS Coaching center & computer institute, I was running this startup as a co-founder with my some friends, and I loved to design promotional posters for our startup",
+    link: "https://www.facebook.com/pimscoachingcentre",
+  },
+  {
+    category: "design",
+    image: noorigd,
+    title: "Designing for Noori Mission",
+    description:
+      "Noori Mission is an online Quran teaching Academy, I was working with them as a website developer and also used to create social media posters for their promotion.",
+    link: "https://www.facebook.com/profile.php?id=100086843539445",
+  },
 ];
+
 const Work = () => {
   const [showAll, setShowALl] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
+  const [filteredProjects, setFilteredProjects] = useState(projectsArray);
+  useEffect(() => {
+    if (activeTab === 0) {
+      setFilteredProjects(projectsArray);
+    } else if (activeTab === 1) {
+      let filtered = projectsArray.filter((proj) => proj.category === "web");
+      setFilteredProjects(filtered);
+    } else if (activeTab === 2) {
+      let filtered = projectsArray.filter((proj) => proj.category === "design");
+      setFilteredProjects(filtered);
+    }
+  }, [activeTab]);
   return (
     <div className="mx-auto my-12 mt-32 bg-black py-24 text-white">
-      <p className="text-4xl mt-16 mb-32 text-center text-white">
-        My <span className="font-extrabold">Work</span>
-      </p>
-      {projectsArray.length > 0 &&
-        (showAll ? projectsArray : projectsArray.slice(0, 6)).map(
+      <HeadingStyle1 black={false} text1={"My"} text2={"Work"} />
+
+      <div className="rounded-full p-2 flex bg-white text-black w-max mx-auto">
+        <div
+          onClick={() => setActiveTab(0)}
+          className={`rounded-full py-2 px-4 text-xl cursor-pointer ${
+            activeTab === 0 && "bg-black text-white"
+          }`}
+        >
+          All
+        </div>
+        <div
+          onClick={() => setActiveTab(1)}
+          className={`rounded-full py-2 px-4 text-xl cursor-pointer ${
+            activeTab === 1 && "bg-black text-white"
+          }`}
+        >
+          Web Development
+        </div>
+        <div
+          onClick={() => setActiveTab(2)}
+          className={`rounded-full py-2 px-4 text-xl cursor-pointer ${
+            activeTab === 2 && "bg-black text-white"
+          }`}
+        >
+          Graphics Designing
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      {filteredProjects.length > 0 &&
+        (showAll ? filteredProjects : filteredProjects.slice(0, 6)).map(
           (project, id) => (
             <Project
               data={project}
@@ -138,12 +222,14 @@ const Work = () => {
           )
         )}
       <div className="flex justify-center">
-        <button
-          onClick={() => setShowALl(!showAll)}
-          className="border rounded-full py-2 px-4 mx-auto min-w-max bg-white text-black hover:scale-110 transition-all duration-300 ease-in-out "
-        >
-          {showAll ? "Hide some" : "Show All"}
-        </button>
+        {filteredProjects.length > 6 && (
+          <button
+            onClick={() => setShowALl(!showAll)}
+            className="border rounded-full py-2 px-4 mx-auto min-w-max bg-white text-black hover:scale-110 transition-all duration-300 ease-in-out "
+          >
+            {showAll ? "Hide some" : "Show All"}
+          </button>
+        )}
       </div>
     </div>
   );

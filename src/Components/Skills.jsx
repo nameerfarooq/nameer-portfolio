@@ -32,12 +32,11 @@ import wordpress from "../assets/icons/wordpress.png";
 import elementor from "../assets/icons/elementor.png";
 import jwt from "../assets/icons/jwt.png";
 import SkillItem from "./SkillItem";
+import HeadingStyle1 from "./HeadingStyleBlack";
 const Skills = () => {
   return (
     <div className="max-w-6xl mx-auto mt-28 mb-8">
-      <p className="text-4xl my-12 text-center">
-        My <span className="font-extrabold">Skills</span>
-      </p>
+      <HeadingStyle1 black={true} text1={"My"} text2={"Skills"} />
       <div className="flex gap-12 flex-wrap justify-center">
         <SkillItem name={"HTML"} image={html} />
         <SkillItem name={"CSS"} image={css} />
