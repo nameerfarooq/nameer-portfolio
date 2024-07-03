@@ -4,6 +4,7 @@ import HeroSection from "./Components/HeroSection";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Work from "./Components/Work";
+import Clients from "./Components/Clients";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Skills />
       <Experience />
       <Work />
+      <Clients />
     </div>
   );
 };
