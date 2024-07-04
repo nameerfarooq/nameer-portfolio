@@ -12,6 +12,7 @@ import encirkel from "../assets/images/encirkel.png";
 import tdc from "../assets/images/tdc.png";
 import greener from "../assets/images/greener.png";
 import tfm from "../assets/images/tfm.png";
+import saadats from "../assets/images/saadats.png";
 import ClientPic from "./ClientPic";
 const Clients = () => {
   return (
@@ -32,6 +33,7 @@ const Clients = () => {
         <ClientPic src={thw} />
         <ClientPic src={thenic} />
         <ClientPic src={greener} />
+        <ClientPic src={saadats} />
         <ClientPic src={tdc} />
         <ClientPic src={tfm} />
         <ClientPic src={noorimission} />
