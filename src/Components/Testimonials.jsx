@@ -37,7 +37,7 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   const { name, designation, testimonial } = card;
   return (
-    <div className=" hover:-mt-10 transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[350px] w-[450px] rounded-3xl p-4 bg-black text-white flex flex-col justify-center items-center">
+    <div className=" hover:-mt-10 transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[350px] w-[450px] rounded-3xl p-4 bg-black text-white flex flex-col justify-center items-center overflow-hidden overflow-clip">
       <span className="absolute top-5 left-5">
         <FaQuoteLeft />
       </span>
@@ -48,7 +48,7 @@ const Card = ({ card }) => {
       <div className="font-light">{designation}</div>
       <br />
 
-      <div className="text-ellipsis text-sm text-zinc-500 text-center">
+      <div className="text-clip  text-sm text-zinc-500 text-center">
         {testimonial}
       </div>
     </div>
@@ -57,28 +57,53 @@ const Card = ({ card }) => {
 
 const cards = [
   {
-    name: "Taha",
-    designation: "CEO @ByteMates",
+    name: "Taha Siddiqui",
+    designation: "CEO, BYTE MATES",
     testimonial:
-      "lorem ipsum hehehehe lorem ipsum huhuhuuhuh lorem ipsum hihihihih lorem ipsum heheheheeh lorem ipsum heheheheeh lorem ipsum ahahahahha",
+      "I am extremely pleased to share my positive feedback regarding the services provided by Mr. Nameer for the development and design of my software company's website. From the very beginning, Mr. Nameer showcased his expertise and professionalism, ensuring that all my requirements were understood and incorporated into the project.",
+  },
+
+  {
+    name: "Talha iftikhar",
+    designation: "Manufacturing Associate @ Northvolt",
+    testimonial:
+      "I am delighted to recommend Nameer for his outstanding work in developing and managing the website for my business, Encirkel. His expertise in web development is truly impressive, and his attention to detail ensures that our site not only looks great but also functions seamlessly.",
   },
   {
-    name: "Taha",
-    designation: "CEO @ByteMates",
+    name: "Nuala Allen",
+    designation: "Certified Therapist",
     testimonial:
-      "lorem ipsum hehehehe lorem ipsum huhuhuuhuh lorem ipsum hihihihih lorem ipsum heheheheeh lorem ipsum heheheheeh lorem ipsum ahahahahha",
+      "I highly recommend Mr. Nameer for his outstanding work creating website that can help the business in getting appointment from the customers. Mr. Nameer has helped out in every way to provide the responsive and adaptive website. I would highly recommend him for future work.",
   },
   {
-    name: "Taha",
-    designation: "CEO @ByteMates",
+    name: "Ahmed Samir",
+    designation: "President of Norrbottens Islamiska Center",
     testimonial:
-      "lorem ipsum hehehehe lorem ipsum huhuhuuhuh lorem ipsum hihihihih lorem ipsum heheheheeh lorem ipsum heheheheeh lorem ipsum ahahahahha",
+      "I am pleased to offer my enthusiastic endorsement of Mr. Nameer in light of his exceptional contributions to the development of our website for the 'Norrbottens Islamiska Center' (www.thenic.se), an esteemed Islamic society in Sweden. Based on the exemplary results demonstrated in this collaborative project, I wholeheartedly recommend Mr. Nameer for prospective engagements. His professionalism, expertise, and commitment to delivering high-quality outcomes are truly commendable. ",
   },
   {
-    name: "Taha",
-    designation: "CEO @ByteMates",
+    name: "Arisha",
+    designation: "Marketing Lead",
     testimonial:
-      "lorem ipsum hehehehe lorem ipsum huhuhuuhuh lorem ipsum hihihihih lorem ipsum heheheheeh lorem ipsum heheheheeh lorem ipsum ahahahahha",
+      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
+  },
+  {
+    name: "Bilal",
+    designation: "CEO @Greener Pakistan",
+    testimonial:
+      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
+  },
+  {
+    name: "Syed Daniyal Zaidi",
+    designation: "Python Developer @NextGenI",
+    testimonial:
+      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
+  },
+  {
+    name: "Usama Ali",
+    designation: "Backend Developer @KNYSYS",
+    testimonial:
+      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
   },
 ];
 const Testimonials = () => {
@@ -104,60 +129,6 @@ const Testimonials = () => {
       <br />
       <br />
       <br />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
-        minima? Amet deserunt et saepe tempora dolorem a corrupti. Quia,
-        possimus impedit qui at porro voluptate nisi expedita consequatur
-        consequuntur aliquid?
-      </p>
     </>
   );
 };
