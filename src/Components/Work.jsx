@@ -16,6 +16,7 @@ import encirkel from "../assets/images/ENCIRKEL.webp";
 import noorigd from "../assets/images/NOORIGD.webp";
 import bytematesgd from "../assets/images/BYTEMATESGD.webp";
 import pimsgd from "../assets/images/PIMSGD.webp";
+import gci from "../assets/images/gci.webp";
 import { useEffect, useState } from "react";
 import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
@@ -116,9 +117,17 @@ const projectsArray = [
   {
     category: "web",
     image: tfc,
-    title: "TFC",
+    title: "TFM",
     description:
-      "TFC is a company, providing CCTV cameras, fire fighting solutions and emergency alarm solutions to their clients, I built their website using HTML, CSS and Javascript",
+      "TFM is a company, providing CCTV cameras, fire fighting solutions and emergency alarm solutions to their clients, I built their website using HTML, CSS and Javascript",
+    link: "https://nameerfarooq.github.io/TFC-Project3/",
+  },
+  {
+    category: "web",
+    image: gci,
+    title: "Global Computer Institute",
+    description:
+      "Global Computer Institute is a reputed institute in area, I was thier student in 2018 and completed CIT course for there, When I learned Web development from SMIT, I thought of developing a website for my older institute so i get hands on practice of developing websites",
     link: "https://nameerfarooq.github.io/TFC-Project3/",
   },
   {

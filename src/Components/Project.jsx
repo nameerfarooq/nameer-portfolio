@@ -11,7 +11,9 @@ const Project = ({ data, id, reversed }) => {
       } gap-12 flex items-center p-4 sm:p-0 `}
     >
       <div className="rounded-3xl  h-auto w-6/12">
-        <Card image={image} />
+        <a href={link} target="_blank">
+          <Card image={image} />
+        </a>
       </div>
       <div className="flex flex-col  gap-6 w-6/12">
         <div className="font-sora font-bold text-5xl">
