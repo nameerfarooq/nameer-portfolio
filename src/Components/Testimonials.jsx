@@ -97,13 +97,13 @@ const cards = [
     name: "Syed Daniyal Zaidi",
     designation: "Python Developer @NextGenI",
     testimonial:
-      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
+      "I had the pleasure of working with Nameer on several projects, and I found him to be a highly organized professional. His communication and time management skills are exceptional.",
   },
   {
     name: "Usama Ali",
     designation: "Backend Developer @KNYSYS",
     testimonial:
-      "I hired Muhammad N. for the website development work, he provided personalised experience, and delivered quality work timely. Really appreciate his efforts.",
+      "I had the pleasure of working with Muhammad Nameer on our Final Year Project, where he excelled as the front-end engineer. Muhammad's exceptional technical skills, innovative thinking, and dedication to continuous learning greatly contributed to our project's success. His proactive approach and excellent communication foster a positive work environment. I recommend him for opportunities.",
   },
 ];
 const Testimonials = () => {
