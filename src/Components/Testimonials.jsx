@@ -1,13 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
-import React from "react";
-import HeadingStyle1 from "./HeadingStyleBlack";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import shineblack from "../assets/icons/shineblack.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const Example = () => {
   return (
-    <div className="bg-white-800">
+    <div className="bg-white">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -22,7 +21,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-green">
+    <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-8">
           {cards.map((card, index) => {
@@ -58,7 +57,7 @@ const Card = ({ card }) => {
 const cards = [
   {
     name: "Taha Siddiqui",
-    designation: "CEO, BYTE MATES",
+    designation: "CEO @BYTE MATES",
     testimonial:
       "I am extremely pleased to share my positive feedback regarding the services provided by Mr. Nameer for the development and design of my software company's website. From the very beginning, Mr. Nameer showcased his expertise and professionalism, ensuring that all my requirements were understood and incorporated into the project.",
   },
@@ -109,7 +108,7 @@ const cards = [
 const Testimonials = () => {
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-32">
+      <div className="max-w-7xl mx-auto mt-32">
         <br />
         <br />
         <br />

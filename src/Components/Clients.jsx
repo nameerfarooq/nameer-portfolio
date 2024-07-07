@@ -16,7 +16,7 @@ import saadats from "../assets/images/saadats.png";
 import ClientPic from "./ClientPic";
 const Clients = () => {
   return (
-    <div className="max-w-6xl mx-auto mt-32 mb-16">
+    <div className="max-w-7xl mx-auto mt-32 mb-16">
       <br />
       <br />
       <HeadingStyle1 black={true} text1={"My"} text2={"Clients"} />

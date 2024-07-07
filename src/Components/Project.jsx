@@ -6,7 +6,7 @@ const Project = ({ data, id, reversed }) => {
   const { image, title, description, link } = data;
   return (
     <div
-      className={`max-w-6xl mx-auto my-[80px] ${
+      className={`max-w-7xl mx-auto my-[80px] ${
         reversed ? "flex flex-row-reverse" : "flex"
       } gap-12 flex items-center p-4 sm:p-0 `}
     >
