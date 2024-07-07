@@ -1,4 +1,11 @@
-import { FaBehance, FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
+import {
+  FaBehance,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import shineblack from "../assets/icons/shineblack.png";
 import shinewhite from "../assets/icons/shinewhite.png";
@@ -50,24 +57,64 @@ const HeroSection = () => {
           </div>
           <div className="socials flex gap-3 items-center">
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaLinkedin />
+              <a
+                href="https://www.linkedin.com/in/muhammad-nameer/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
             </div>
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaGithub />
+              <a
+                href="https://github.com/nameerfarooq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
             </div>
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaEnvelope />
+              <a
+                href="mailto:nameerfarooq18@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaEnvelope />{" "}
+              </a>
             </div>
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaWhatsapp />
+              <a
+                href="https://wa.me/+923352418380"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaWhatsapp />{" "}
+              </a>
             </div>
-           
+
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaXTwitter />
+              <a
+                href="https://x.com/NameerFarooq18"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaXTwitter />
+              </a>
             </div>
-         
+
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
-              <FaBehance />
+              <a
+                href="https://www.behance.net/nameerfarooq?tracking_source=search_projects%7Cnameerfarooq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <FaBehance />{" "}
+              </a>
             </div>
           </div>
         </div>

@@ -128,7 +128,7 @@ const projectsArray = [
     title: "Global Computer Institute",
     description:
       "Global Computer Institute is a reputed institute in area, I was thier student in 2018 and completed CIT course for there, When I learned Web development from SMIT, I thought of developing a website for my older institute so i get hands on practice of developing websites",
-    link: "https://nameerfarooq.github.io/TFC-Project3/",
+    link: "https://nameerfarooq.github.io/GlobalComputerInstitute/",
   },
   {
     category: "web",
