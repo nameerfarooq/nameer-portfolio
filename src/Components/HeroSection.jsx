@@ -39,8 +39,7 @@ const HeroSection = () => {
                   2000,
                   "Full Stack Developer",
                   2000,
-                  "Occasional Graphics Designer",
-                  2000,
+              
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 30 }}
                 style={{ display: "block", minHeight: "30px" }}
