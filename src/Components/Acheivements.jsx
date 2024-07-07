@@ -3,8 +3,7 @@ import { HoverImageLinks } from "./HoverImageLinks.jsx";
 
 const Acheivements = () => {
   return (
-    <div className="mb-16 mx-auto">
-      
+    <div className=" mx-auto">
       <HoverImageLinks />
     </div>
   );
