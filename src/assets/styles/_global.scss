@@ -72,3 +72,32 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #000000; /* Color of the scrollbar thumb on hover */
 }
+
+@media (max-width: 1024px) {
+  .nav-items {
+    display: none !important;
+  }
+  .burgerButton {
+    display: flex !important;
+  }
+}
+@media (max-width: 500px) {
+  .resumeButton {
+    display: none !important;
+  }
+  .resumeButton2 {
+    display: flex !important;
+  }
+  .nav-logo {
+    flex: 2 !important;
+  }
+  .burgerButton {
+    width: max-content !important;
+  }
+}
+.burgerButton {
+  display: none;
+}
+.resumeButton2 {
+  display: none;
+}
