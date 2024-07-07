@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
+import FancyButton from "./FancyButton";
 const Header = () => {
   return (
     <div className="max-w-7xl mx-auto p-3 flex justify-between gap-3 header">
@@ -14,12 +15,13 @@ const Header = () => {
         <div className=" cursor-pointer">Contact</div>
       </div>
       <div className="flex-1 justify-end flex">
-        <div className="flex gap-2 items-center w-max font-semibold py-3 px-8 rounded bg-black text-white hover:opacity-75 cursor-pointer">
+        {/* <div className="flex gap-2 items-center w-max font-semibold py-3 px-8 rounded bg-black text-white hover:opacity-75 cursor-pointer">
           <div> Resume</div>
           <span>
             <FaArrowDown />
           </span>
-        </div>
+        </div> */}
+        <FancyButton />
       </div>
     </div>
   );
