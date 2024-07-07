@@ -1,15 +1,16 @@
 import bulb from "../assets/images/bulb.gif";
 import HeadingStyle1 from "./HeadingStyleBlack";
 import { motion } from "framer-motion";
-import background from "../assets/images/background.png";
 export const RevealLinks = () => {
   return (
     <section className="place-content-center gap-8 flex flex-wrap ">
-      <FlipLink href="#">Github</FlipLink>
-      <FlipLink href="#">Linkedin</FlipLink>
-      <FlipLink href="#">WhatsApp</FlipLink>
-      <FlipLink href="#">Email</FlipLink>
-      <FlipLink href="#">X (Twitter)</FlipLink>
+      <FlipLink href="https://www.linkedin.com/in/muhammad-nameer/">
+        Linkedin
+      </FlipLink>
+      <FlipLink href="https://github.com/nameerfarooq">Github</FlipLink>
+      <FlipLink href="mailto:nameerfarooq18@gmail.com">Email</FlipLink>
+      <FlipLink href="https://wa.me/+923352418380">WhatsApp</FlipLink>
+      <FlipLink href="https://x.com/NameerFarooq18">X (Twitter)</FlipLink>
     </section>
   );
 };
@@ -23,6 +24,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
+      target="_blank"
       className="relative block overflow-hidden whitespace-nowrap font-black text-white uppercase text-3xl"
       style={{
         lineHeight: 0.95,
