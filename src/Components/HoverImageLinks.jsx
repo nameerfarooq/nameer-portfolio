@@ -2,7 +2,16 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import HeadingStyle1 from "./HeadingStyleBlack";
-
+import webcert from "../assets/images/webcert.jpg";
+import jira from "../assets/images/jira.jpeg";
+import postman from "../assets/images/postmancert.jpg";
+import git from "../assets/images/gitcert.jpg";
+import photoshop from "../assets/images/cert3.jpeg";
+import flash from "../assets/images/cert4.jpeg";
+import excel from "../assets/images/cert2.jpeg";
+import cit from "../assets/images/cert1.jpeg";
+import uit from "../assets/images/uit.jpeg";
+import { Navigate, useNavigate } from "react-router-dom";
 export const HoverImageLinks = () => {
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
@@ -15,56 +24,67 @@ export const HoverImageLinks = () => {
       <br />
       <br />
 
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-7xl">
         <Link
-          heading="About"
-          subheading="Learn what we do here"
-          imgSrc="/imgs/random/11.jpg"
-          href="#"
+          heading="Web Development"
+          subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
+          imgSrc={webcert}
+          href="/src/assets/images/webcert.jpg"
         />
         <Link
-          heading="About"
-          subheading="Learn what we do here"
-          imgSrc="/imgs/random/11.jpg"
-          href="#"
+          heading="Jira"
+          subheading="Get started with Jira by coursera"
+          imgSrc={jira}
+          href="/src/assets/images/jira.jpeg"
         />
         <Link
-          heading="About"
-          subheading="Learn what we do here"
-          imgSrc="/imgs/random/11.jpg"
-          href="#"
+          heading="Postman"
+          subheading="Introduction to API testing with Postman by 10 pearls"
+          imgSrc={postman}
+          href="/src/assets/images/postmancert.jpg"
+        />
+
+        <Link
+          heading="ICT Project Exhibition"
+          subheading="Secured 2nd position in ICT project exhibition at UIT"
+          imgSrc={uit}
+          href="/src/assets/images/uit.jpeg"
+        />
+
+        <Link
+          heading="CIT"
+          subheading="CIT from SBTE (Sindh board of technical education)"
+          imgSrc={cit}
+          href="/src/assets/images/cert1.jpeg"
         />
         <Link
-          heading="About"
-          subheading="Learn what we do here"
-          imgSrc="/imgs/random/11.jpg"
-          href="#"
+          heading="GIT"
+          subheading="GIT Fundamentals by 10 pearls"
+          imgSrc={git}
+          href="/src/assets/images/gitcert.jpg"
         />
         <Link
-          heading="Clients"
-          subheading="We work with great people"
-          imgSrc="/imgs/random/6.jpg"
-          href="#"
+          heading="Photoshop"
+          subheading="1st position in Adobe PhotoShop's internal examination by GCI"
+          imgSrc={photoshop}
+          href="/src/assets/images/cert3.jpeg"
         />
         <Link
-          heading="Portfolio"
-          subheading="Our work speaks for itself"
-          imgSrc="/imgs/random/4.jpg"
-          href="#"
+          heading="MS Excel"
+          subheading="1st position in MS EXCEL's internal examination by GCI"
+          imgSrc={excel}
+          href="/src/assets/images/cert2.jpeg"
         />
         <Link
-          heading="Careers"
-          subheading="We want cool people"
-          imgSrc="/imgs/random/5.jpg"
-          href="#"
-        />
-        <Link
-          heading="Fun"
-          subheading="Incase you're bored"
-          imgSrc="/imgs/random/10.jpg"
-          href="#"
+          heading="Flash"
+          subheading="1st position in Flash's internal examination by GCI"
+          imgSrc={flash}
+          href="/src/assets/images/cert4.jpeg"
         />
       </div>
+      <br />
+      <br />
+      <br />
     </section>
   );
 };
@@ -100,6 +120,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
   return (
     <motion.a
       href={href}
+      target="_blank"
       ref={ref}
       onMouseMove={handleMouseMove}
       initial="initial"
