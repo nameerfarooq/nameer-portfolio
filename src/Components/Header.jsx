@@ -1,4 +1,5 @@
 import FancyButton from "./FancyButton";
+import resume from "../assets/Nameer (React Js + MERN).pdf";
 const Header = () => {
   return (
     <div
@@ -35,7 +36,9 @@ const Header = () => {
             <FaArrowDown />
           </span>
         </div> */}
-        <FancyButton />
+        <a href={resume} target="_blank" download>
+          <FancyButton />
+        </a>
       </div>
     </div>
   );
