@@ -29,57 +29,57 @@ export const HoverImageLinks = () => {
           heading="Web Development"
           subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
           imgSrc={webcert}
-          href="/src/assets/images/webcert.jpg"
+          href="/assets/images/webcert.jpg"
         />
         <Link
           heading="Jira"
           subheading="Get started with Jira by coursera"
           imgSrc={jira}
-          href="/src/assets/images/jira.jpeg"
+          href="/assets/images/jira.jpeg"
         />
         <Link
           heading="Postman"
           subheading="Introduction to API testing with Postman by 10 pearls"
           imgSrc={postman}
-          href="/src/assets/images/postmancert.jpg"
+          href="/assets/images/postmancert.jpg"
         />
 
         <Link
           heading="ICT Project Exhibition"
           subheading="Secured 2nd position in ICT project exhibition at UIT"
           imgSrc={uit}
-          href="/src/assets/images/uit.jpeg"
+          href="/assets/images/uit.jpeg"
         />
 
         <Link
           heading="CIT"
           subheading="CIT from SBTE (Sindh board of technical education)"
           imgSrc={cit}
-          href="/src/assets/images/cert1.jpeg"
+          href="/assets/images/cert1.jpeg"
         />
         <Link
           heading="GIT"
           subheading="GIT Fundamentals by 10 pearls"
           imgSrc={git}
-          href="/src/assets/images/gitcert.jpg"
+          href="/assets/images/gitcert.jpg"
         />
         <Link
           heading="Photoshop"
           subheading="1st position in Adobe PhotoShop's internal examination by GCI"
           imgSrc={photoshop}
-          href="/src/assets/images/cert3.jpeg"
+          href="/assets/images/cert3.jpeg"
         />
         <Link
           heading="MS Excel"
           subheading="1st position in MS EXCEL's internal examination by GCI"
           imgSrc={excel}
-          href="/src/assets/images/cert2.jpeg"
+          href="/assets/images/cert2.jpeg"
         />
         <Link
           heading="Flash"
           subheading="1st position in Flash's internal examination by GCI"
           imgSrc={flash}
-          href="/src/assets/images/cert4.jpeg"
+          href="/assets/images/cert4.jpeg"
         />
       </div>
       <br />
