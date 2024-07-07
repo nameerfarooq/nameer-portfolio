@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import HeadingStyle1 from "./HeadingStyleBlack";
 import webcert from "../assets/images/webcert.jpg";
@@ -12,84 +13,104 @@ import excel from "../assets/images/cert2.jpeg";
 import cit from "../assets/images/cert1.jpeg";
 import uit from "../assets/images/uit.jpeg";
 import { Navigate, useNavigate } from "react-router-dom";
+import { FaCross, FaRegWindowClose, FaWindowClose } from "react-icons/fa";
 export const HoverImageLinks = () => {
+  const [showImg, setshowImg] = useState(false);
+  const [imgSrc, setImgSrc] = useState("");
+  const handleImg = (src) => {
+    setImgSrc(src);
+    setshowImg(true);
+  };
   return (
-    <section className="bg-neutral-950 p-4 md:p-8">
-      <br />
-      <br />
-      <HeadingStyle1 black={false} text1={"My"} text2={"Achievements"} />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <>
+      {imgSrc && showImg && (
+        <div className="flex p-12 items-center justify-center bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen z-40">
+          <div
+            onClick={() => setshowImg(false)}
+            className="fixed top-10 right-10 z-50 cursor-pointer"
+          >
+            <FaRegWindowClose size={50} color="white" />
+          </div>
+          <img src={imgSrc} className="max-w-7xl max-h-screen object-contain" alt="" />
+        </div>
+      )}
+      <section className="bg-neutral-950 p-4 md:p-8">
+        <br />
+        <br />
+        <HeadingStyle1 black={false} text1={"My"} text2={"Achievements"} />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
-      <div className="mx-auto max-w-7xl">
-        <Link
-          heading="Web Development"
-          subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
-          imgSrc={webcert}
-          href="/assets/images/webcert.jpg"
-        />
-        <Link
-          heading="Jira"
-          subheading="Get started with Jira by coursera"
-          imgSrc={jira}
-          href="/assets/images/jira.jpeg"
-        />
-        <Link
-          heading="Postman"
-          subheading="Introduction to API testing with Postman by 10 pearls"
-          imgSrc={postman}
-          href="/assets/images/postmancert.jpg"
-        />
+        <div className="mx-auto max-w-7xl">
+          <Link
+            heading="Web Development"
+            subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
+            imgSrc={webcert}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="Jira"
+            subheading="Get started with Jira by coursera"
+            imgSrc={jira}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="Postman"
+            subheading="Introduction to API testing with Postman by 10 pearls"
+            imgSrc={postman}
+            handleImg={handleImg}
+          />
 
-        <Link
-          heading="ICT Project Exhibition"
-          subheading="Secured 2nd position in ICT project exhibition at UIT"
-          imgSrc={uit}
-          href="/assets/images/uit.jpeg"
-        />
+          <Link
+            heading="ICT Project Exhibition"
+            subheading="Secured 2nd position in ICT project exhibition at UIT"
+            imgSrc={uit}
+            handleImg={handleImg}
+          />
 
-        <Link
-          heading="CIT"
-          subheading="CIT from SBTE (Sindh board of technical education)"
-          imgSrc={cit}
-          href="/assets/images/cert1.jpeg"
-        />
-        <Link
-          heading="GIT"
-          subheading="GIT Fundamentals by 10 pearls"
-          imgSrc={git}
-          href="/assets/images/gitcert.jpg"
-        />
-        <Link
-          heading="Photoshop"
-          subheading="1st position in Adobe PhotoShop's internal examination by GCI"
-          imgSrc={photoshop}
-          href="/assets/images/cert3.jpeg"
-        />
-        <Link
-          heading="MS Excel"
-          subheading="1st position in MS EXCEL's internal examination by GCI"
-          imgSrc={excel}
-          href="/assets/images/cert2.jpeg"
-        />
-        <Link
-          heading="Flash"
-          subheading="1st position in Flash's internal examination by GCI"
-          imgSrc={flash}
-          href="/assets/images/cert4.jpeg"
-        />
-      </div>
-      <br />
-      <br />
-      <br />
-    </section>
+          <Link
+            heading="CIT"
+            subheading="CIT from SBTE (Sindh board of technical education)"
+            imgSrc={cit}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="GIT"
+            subheading="GIT Fundamentals by 10 pearls"
+            imgSrc={git}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="Photoshop"
+            subheading="1st position in Adobe PhotoShop's internal examination by GCI"
+            imgSrc={photoshop}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="MS Excel"
+            subheading="1st position in MS EXCEL's internal examination by GCI"
+            imgSrc={excel}
+            handleImg={handleImg}
+          />
+          <Link
+            heading="Flash"
+            subheading="1st position in Flash's internal examination by GCI"
+            imgSrc={flash}
+            handleImg={handleImg}
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+      </section>
+    </>
   );
 };
 
-const Link = ({ heading, imgSrc, subheading, href }) => {
+const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -119,13 +140,14 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
 
   return (
     <motion.a
+      onClick={() => handleImg(imgSrc)}
       href={href}
       target="_blank"
       ref={ref}
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      className="cursor-pointer group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
       <div>
         <motion.span
