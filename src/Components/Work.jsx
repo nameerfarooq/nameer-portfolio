@@ -187,7 +187,7 @@ const Work = () => {
     }
   }, [activeTab]);
   return (
-    <div className="mx-auto my-12 mt-32 bg-black py-24 text-white">
+    <div id="work" className="mx-auto my-12 mt-32 bg-black py-24 text-white">
       <HeadingStyle1 black={false} text1={"My"} text2={"Work"} />
 
       <div className="rounded-full p-2 flex bg-white text-black w-max mx-auto">

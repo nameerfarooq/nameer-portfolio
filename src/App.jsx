@@ -8,6 +8,7 @@ import Testimonials from "./Components/Testimonials";
 import Acheivements from "./Components/Acheivements";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Acheivements />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

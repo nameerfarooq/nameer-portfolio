@@ -81,7 +81,7 @@ const FlipLink = ({ children, href }) => {
 };
 const Contact = () => {
   return (
-    <div className="w-full contact-background py-32">
+    <div id="contact" className="w-full contact-background py-32">
       <div className="max-w-7xl mx-auto">
         <HeadingStyle1 black={true} text1={"Contact"} text2={"Me"} />
 

@@ -35,7 +35,7 @@ import SkillItem from "./SkillItem";
 import HeadingStyle1 from "./HeadingStyleBlack";
 const Skills = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-28 mb-8">
+    <div id="skills" className="max-w-7xl mx-auto mt-28 mb-8">
       <HeadingStyle1 black={true} text1={"My"} text2={"Skills"} />
       <div className="flex gap-12 flex-wrap justify-center">
         <SkillItem name={"HTML"} image={html} />

@@ -44,9 +44,12 @@
   }
 }
 
-.contact-background{
-  background: url('../images/back2.png');
+.contact-background {
+  background: url("../images/back2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+html {
+  scroll-behavior: smooth;
 }
