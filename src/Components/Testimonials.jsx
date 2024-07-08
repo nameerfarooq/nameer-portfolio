@@ -19,7 +19,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-95%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
@@ -110,7 +110,7 @@ const cards = [
 const Testimonials = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-28 sm:mt-40">
+      <div className="w-full sm:max-w-7xl mx-auto mt-28 sm:mt-40">
         <HeadingStyle1 black={true} text1={"Client's"} text2={"Testimonials"} />
       </div>
       <Example />
