@@ -4,7 +4,7 @@ const ClientPic = ({ src }) => {
   return (
     <img
       src={src}
-      className=" grayscale hover:grayscale-0 transition-all ease-in-out duration-300 max-w-[200px] h-[200px] object-contain cursor-pointer hover:scale-110"
+      className=" grayscale hover:grayscale-0 transition-all ease-in-out duration-300 w-[130px] h-[130px] sm:w-[200px] sm:h-[200px] object-contain cursor-pointer hover:scale-110"
       alt="Client logo"
     />
   );

@@ -37,7 +37,7 @@ const Skills = () => {
   return (
     <div id="skills" className="max-w-7xl mx-auto mt-28 mb-8">
       <HeadingStyle1 black={true} text1={"My"} text2={"Skills"} />
-      <div className="flex gap-12 flex-wrap justify-center">
+      <div className="flex gap-3 sm:gap-12 flex-wrap justify-center">
         <SkillItem name={"HTML"} image={html} />
         <SkillItem name={"CSS"} image={css} />
         <SkillItem name={"SCSS"} image={scss} />

@@ -16,17 +16,15 @@ import saadats from "../assets/images/saadats.png";
 import ClientPic from "./ClientPic";
 const Clients = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-32 mb-16">
+    <div className="max-w-7xl mx-auto mt-16 sm:mt-32 mb-16">
       <br />
       <br />
       <HeadingStyle1 black={true} text1={"My"} text2={"Clients"} />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
+  
 
-      <div className=" flex gap-28 flex-wrap justify-center items-center">
+      <div className=" flex gap-8 sm:gap-28 flex-wrap justify-center items-center">
         <ClientPic src={bytemates} />
         <ClientPic src={encirkel} />
         <ClientPic src={pims} />

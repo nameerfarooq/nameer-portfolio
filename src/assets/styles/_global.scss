@@ -101,3 +101,8 @@ html {
 .resumeButton2 {
   display: none;
 }
+@media (max-width: 768px) {
+  .flip-horizontal {
+    transform: scaleX(-1);
+  }
+}

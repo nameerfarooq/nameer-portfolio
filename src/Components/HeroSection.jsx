@@ -15,7 +15,7 @@ import { FaUpwork, FaXTwitter } from "react-icons/fa6";
 const HeroSection = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto flex gap-5 items-center flex-wrap-reverse p-4 my-14">
+      <div className="max-w-full lg:max-w-7xl mx-auto flex gap-5 items-center flex-wrap-reverse  md:flex-nowrap p-4 md:p-12 my-14">
         <div className="flex flex-col gap-8 flex-1">
           <div className="name flex flex-col gap-2">
             <div className="text-xl flex gap-2">
@@ -27,10 +27,10 @@ const HeroSection = () => {
               />{" "}
               I'am{" "}
             </div>
-            <div className="text-4xl font-extrabold cursor-pointer">
+            <div className="text-3xl sm:text-4xl font-extrabold cursor-pointer">
               Muhammad Nameer
             </div>
-            <div className="text-4xl font-medium">
+            <div className="text-2xl sm:text-3xl font-medium">
               <TypeAnimation
                 sequence={[
                   "Software Engineer",
@@ -39,7 +39,6 @@ const HeroSection = () => {
                   2000,
                   "Full Stack Developer",
                   2000,
-              
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 30 }}
                 style={{ display: "block", minHeight: "30px" }}
@@ -54,77 +53,77 @@ const HeroSection = () => {
             thrive on creating exceptional digital experiences and am open to
             new freelance collaborations to showcase my expanding expertise.
           </div>
-          <div className="socials flex gap-3 items-center">
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+          <div className="socials flex gap-2 sm:gap-3 items-center flex-wrap sm:flex-nowrap">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://www.linkedin.com/in/muhammad-nameer/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin />
+                <FaLinkedin size={22} />
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://github.com/nameerfarooq"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub />
+                <FaGithub size={22}/>
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="mailto:nameerfarooq18@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaEnvelope />{" "}
+                <FaEnvelope size={22}/>{" "}
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://wa.me/+923352418380"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaWhatsapp />{" "}
+                <FaWhatsapp size={22}/>{" "}
               </a>
             </div>
 
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://x.com/NameerFarooq18"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaXTwitter />
+                <FaXTwitter size={22}/>
               </a>
             </div>
 
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-10 h-10 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://www.behance.net/nameerfarooq?tracking_source=search_projects%7Cnameerfarooq"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaBehance />{" "}
+                <FaBehance size={22}/>{" "}
               </a>
             </div>
           </div>
         </div>
-        <div className="flex items-center flex-1 justify-center mx-auto">
-          <video autoPlay loop muted>
+        <div className="flex items-center flex-1 justify-center mx-auto min-w-[270px]">
+          <video autoPlay loop muted className="flip-horizontal">
             <source src={hero} type="video/mp4" />
           </video>
         </div>
       </div>
       <div>
-        <Marquee className="border-y-2 border-black p-3 bg-black text-white  ">
+        <Marquee className="border-y-2 border-black p-3 bg-black text-white text-sm sm:text-lg">
           <p className="flex gap-2">
             <img width={20} src={shinewhite} alt="" /> HTML{" "}
             <img width={20} src={shinewhite} alt="" /> CSS{" "}
@@ -169,7 +168,7 @@ const HeroSection = () => {
         </Marquee>
         <Marquee
           direction="right"
-          className="border-y-2 border-black p-3  bg-white"
+          className="border-y-2 border-black p-3  bg-white text-sm sm:text-lg"
         >
           <p className="flex gap-2">
             <img width={20} src={shineblack} alt="" /> HTML{" "}
