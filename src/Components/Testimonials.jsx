@@ -4,6 +4,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import shineblack from "../assets/icons/shineblack.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import HeadingStyle1 from "./HeadingStyleBlack";
 const Example = () => {
   return (
     <div className="bg-white">
@@ -36,18 +37,18 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   const { name, designation, testimonial } = card;
   return (
-    <div className=" hover:-mt-10 transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[350px] w-[450px] rounded-3xl p-4 bg-black text-white flex flex-col justify-center items-center overflow-hidden overflow-clip">
+    <div className=" transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[520px] w-[270px] sm:h-[550px] sm:w-[450px] rounded-3xl p-4 bg-black text-white flex flex-col justify-center items-center overflow-hidden">
       <span className="absolute top-5 left-5">
         <FaQuoteLeft />
       </span>
       <span className="absolute bottom-5 right-5">
         <FaQuoteRight />
       </span>
-      <div className="text-2xl font-bold">{name}</div>
-      <div className="font-light">{designation}</div>
+      <div className="text-xl sm:text-2xl font-bold text-center">{name}</div>
+      <div className="font-light text-center">{designation}</div>
       <br />
 
-      <div className="text-clip  text-sm text-zinc-500 text-center">
+      <div className="text-clip text-sm text-zinc-500 text-center">
         {testimonial}
       </div>
     </div>
@@ -108,21 +109,8 @@ const cards = [
 const Testimonials = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto mt-32">
-        <br />
-        <br />
-        <br />
-        <div className="text-4xl relative text-center flex gap-2 items-center justify-center">
-          <img
-            className="w-[35px] h-[35px] object-contain"
-            src={shineblack}
-            alt=""
-          />
-          <p className="flex gap-2">
-            Client's
-            <span className="font-extrabold">Testimonials</span>
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto mt-28 sm:mt-40">
+        <HeadingStyle1 black={true} text1={"Client's"} text2={"Testimonials"} />
       </div>
       <Example />
       <br />
