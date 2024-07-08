@@ -5,10 +5,9 @@ const Experience = () => {
   return (
     <div id="experience" className="max-w-7xl mx-auto my-12 mt-32">
       <HeadingStyle1 black={true} text1={"My"} text2={"Experience"} />
-      <br />
-      <br />
-      <br />
-      <ExperienceTabs />
+      <div className="mt-8 sm:mt-16">
+        <ExperienceTabs />
+      </div>
     </div>
   );
 };

@@ -27,8 +27,8 @@ export default function HeaderDrawer({ open, handleOpen }) {
         <div className=" cursor-pointer">
           <a href="#contact">Contact</a>
         </div>
-        <a href={resume} target="_blank" download>
-          <div className="resumeButton2">
+        <a className="resumeButton2 " href={resume} target="_blank" download>
+          <div >
             <FancyButton />
           </div>
         </a>

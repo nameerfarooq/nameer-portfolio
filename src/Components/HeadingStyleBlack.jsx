@@ -4,7 +4,7 @@ import shinewhite from "../assets/icons/shinewhite.png";
 const HeadingStyle1 = ({ black, text1, text2 }) => {
   return (
     <div
-      className={`text-4xl my-12 text-center flex gap-2 items-center justify-center ${
+      className={`text-2xl sm:text-4xl my-12 text-center flex gap-2 items-center justify-center ${
         black ? "text-black" : "text-white"
       }`}
     >

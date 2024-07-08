@@ -54,7 +54,9 @@ const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
         >
           {title}
         </span>
-        <span className="block lg:hidden text-xl font-light">{title}</span>
+        <span className="block lg:hidden text-xs sm:text-xl font-light">
+          {title}
+        </span>
         <div className="w-6 lg:w-full aspect-square bg-black text-white grid place-items-center">
           {Icon}
         </div>
@@ -108,7 +110,7 @@ const panelVariants = {
 const panelVariantsSm = {
   open: {
     width: "100%",
-    height: "250px",
+    height: "max-content",
   },
   closed: {
     width: "100%",
@@ -129,7 +131,9 @@ const descriptionVariants = {
 
 const desc1 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">Software Engineer @Hashcore</div>
+    <div className="text-xl sm:text-2xl font-semibold">
+      Software Engineer @Hashcore
+    </div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
       Nov 2023 - Present
     </div>
@@ -142,7 +146,9 @@ const desc1 = (
 );
 const desc2 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">Frontend Developer @Stallyons</div>
+    <div className="text-xl sm:text-2xl font-semibold">
+      Frontend Developer @Stallyons
+    </div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
       Sep 2023 - Nov 2023
     </div>
@@ -155,7 +161,9 @@ const desc2 = (
 );
 const desc3 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">Frontend Developer @Pluton.ltd</div>
+    <div className="text-xl sm:text-2xl font-semibold">
+      Frontend Developer @Pluton.ltd
+    </div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
       May 2023 - Sep 2023
     </div>
@@ -168,7 +176,9 @@ const desc3 = (
 );
 const desc4 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">Frontend Developer @TheFourC's</div>
+    <div className="text-xl sm:text-2xl font-semibold">
+      Frontend Developer @TheFourC's
+    </div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
       Oct 2021 - Oct 2022
     </div>
@@ -180,7 +190,7 @@ const desc4 = (
 );
 const desc5 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">Freelance Developer</div>
+    <div className="text-xl sm:text-2xl font-semibold">Freelance Developer</div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
       Oct 2020 - Present
     </div>
@@ -193,7 +203,7 @@ const desc5 = (
 );
 const desc6 = (
   <div className="rounded bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-2xl font-semibold">
+    <div className="text-xl sm:text-2xl font-semibold">
       IT Trainer @PIMS Computer Institute
     </div>
     <div className="bg-transparent border-2 border-white rounded-full px-3 py-2 my-3 max-w-max">
