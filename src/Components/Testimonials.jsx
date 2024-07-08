@@ -19,7 +19,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
@@ -45,9 +45,10 @@ const Card = ({ card }) => {
         <FaQuoteRight />
       </span>
       <div className="text-xl sm:text-2xl font-bold text-center">{name}</div>
-      <div className="font-light text-center">{designation}</div>
+      <div className="font-light text-sm sm:text-lg text-center">
+        {designation}
+      </div>
       <br />
-
       <div className="text-clip text-sm text-zinc-500 text-center">
         {testimonial}
       </div>
@@ -77,9 +78,9 @@ const cards = [
   },
   {
     name: "Ahmed Samir",
-    designation: "President of Norrbottens Islamiska Center",
+    designation: "President of NIC",
     testimonial:
-      "I am pleased to offer my enthusiastic endorsement of Mr. Nameer in light of his exceptional contributions to the development of our website for the 'Norrbottens Islamiska Center' (www.thenic.se), an esteemed Islamic society in Sweden. Based on the exemplary results demonstrated in this collaborative project, I wholeheartedly recommend Mr. Nameer for prospective engagements. His professionalism, expertise, and commitment to delivering high-quality outcomes are truly commendable. ",
+      "I am pleased to offer my enthusiastic endorsement of Mr. Nameer in light of his exceptional contributions to the development of our website for www.thenic.se, an esteemed Islamic society in Sweden. Based on the exemplary results demonstrated in this collaborative project, I wholeheartedly recommend Mr. Nameer for prospective engagements. His professionalism, expertise, and commitment to delivering high-quality outcomes are truly commendable. ",
   },
   {
     name: "Arisha",
