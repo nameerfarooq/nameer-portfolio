@@ -24,27 +24,28 @@ export const HoverImageLinks = () => {
   return (
     <>
       {imgSrc && showImg && (
-        <div className="flex p-12 items-center justify-center bg-black bg-opacity-40 fixed top-0 left-0 w-full h-screen z-40">
+        <div className="flex p-3 sm:p-12 items-center justify-center bg-black bg-opacity-80 fixed top-0 left-0 w-full h-screen z-40">
           <div
             onClick={() => setshowImg(false)}
             className="fixed top-10 right-10 z-50 cursor-pointer"
           >
             <FaRegWindowClose size={50} color="white" />
           </div>
-          <img src={imgSrc} className="max-w-7xl max-h-screen object-contain" alt="" />
+          <div className="max-w-7xl max-h-screen">
+            <img
+              src={imgSrc}
+              className=" w-full h-auto object-contain"
+              alt=""
+            />
+          </div>
         </div>
       )}
-      <section className="bg-neutral-950  p-6 md:p-8">
+      <section className="bg-black  p-6 md:p-8">
         <br />
         <br />
         <HeadingStyle1 black={false} text1={"My"} text2={"Achievements"} />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
 
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl mt-20 sm:mt-32">
           <Link
             heading="Web Development"
             subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
@@ -160,7 +161,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-xl sm:text-4xl font-bold text-white transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 w-[120%] sm:w-100% block text-xl sm:text-4xl font-bold text-white transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -169,7 +170,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
                 whileHover: { x: 16 },
               }}
               transition={{ type: "spring" }}
-              className="inline-block"
+              className="inline-block "
               key={i}
             >
               {l}

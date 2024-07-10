@@ -49,7 +49,7 @@ const Card = ({ card }) => {
         {designation}
       </div>
       <br />
-      <div className="text-clip text-sm text-zinc-500 text-center">
+      <div className="text-clip text-sm sm:text-base text-zinc-500 text-center">
         {testimonial}
       </div>
     </div>

@@ -1,9 +1,10 @@
+import { FaDownLong } from "react-icons/fa6";
 import bulb from "../assets/images/bulb.gif";
 import HeadingStyle1 from "./HeadingStyleBlack";
 import { motion } from "framer-motion";
 export const RevealLinks = () => {
   return (
-    <section className="place-content-center gap-8 flex flex-wrap ">
+    <section className="place-content-center gap-4 flex flex-wrap sm:flex-row flex-col items-center justify-center">
       <FlipLink href="https://www.linkedin.com/in/muhammad-nameer/">
         Linkedin
       </FlipLink>
@@ -25,7 +26,7 @@ const FlipLink = ({ children, href }) => {
       whileHover="hovered"
       href={href}
       target="_blank"
-      className="relative block overflow-hidden whitespace-nowrap font-black text-white uppercase text-3xl"
+      className="relative block overflow-hidden whitespace-nowrap font-black text-black uppercase text-3xl"
       style={{
         lineHeight: 0.95,
       }}
@@ -81,18 +82,23 @@ const FlipLink = ({ children, href }) => {
 };
 const Contact = () => {
   return (
-    <div id="contact" className="w-full contact-background py-32">
+    <div id="contact" className="w-full contact-background py-12 sm:py-36 px-6">
       <div className="max-w-7xl mx-auto">
-        <HeadingStyle1 black={true} text1={"Contact"} text2={"Me"} />
+        <HeadingStyle1 black={false} text1={"Contact"} text2={"Me"} />
 
-        <div className="flex mt-16 items-center gap-5 justify-center">
-          <div className="flex-1 flex justify-center flex-col items-center">
-            <img src={bulb} alt="" />
-            <div className="text-4xl">Got a new project idea?</div>
-            <div className="text-6xl font-black">let's Discuss!</div>
-            <div className="mt-24 py-6 px-12  bg-black text-white rounded-lg">
-              <RevealLinks />
+        <div className=" text-white mt-16 flex gap-6 sm:gap-10 justify-center flex-col items-center">
+          <img src={bulb} alt="" className="invert" />
+          <div>
+            <div className="text-2xl sm:text-4xl text-center">
+              Got a new project idea?
             </div>
+            <div className="text-4xl sm:text-6xl font-black text-center">
+              let's Discuss!
+            </div>
+          </div>
+          <FaDownLong size={40} />
+          <div className="py-6 px-12  bg-white rounded-lg">
+            <RevealLinks />
           </div>
         </div>
       </div>
