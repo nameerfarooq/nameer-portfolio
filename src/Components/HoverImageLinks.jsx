@@ -34,7 +34,7 @@ export const HoverImageLinks = () => {
           <img src={imgSrc} className="max-w-7xl max-h-screen object-contain" alt="" />
         </div>
       )}
-      <section className="bg-neutral-950 p-4 md:p-8">
+      <section className="bg-neutral-950  p-6 md:p-8">
         <br />
         <br />
         <HeadingStyle1 black={false} text1={"My"} text2={"Achievements"} />
@@ -160,7 +160,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-xl sm:text-4xl font-bold text-white transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
