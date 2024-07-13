@@ -22,14 +22,6 @@ import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
   {
     category: "web",
-    image: bytemates,
-    title: "Bytemates",
-    description:
-      "Bytemates is a software agency, and I had the honor of developing a beautiful website for them. I utilized WordPress, Elementor, Slider Revolution, and my Adobe Photoshop skills to create the site. Additionally, I designed numerous social media posters for the agency.",
-    link: "https://bytemates.com/",
-  },
-  {
-    category: "web",
     image: greener,
     title: "Greener Pakistan",
     description:
@@ -63,6 +55,14 @@ const projectsArray = [
       "As I transition from frontend to full stack development, I believe in learning by doing. To hone my skills, I followed a YouTube tutorial and created a stunning full stack real estate website using the MERN stack, Tailwind css, and Firebase.",
 
     link: "https://city-estate.onrender.com/",
+  },
+  {
+    category: "web",
+    image: bytemates,
+    title: "Bytemates",
+    description:
+      "Bytemates is a software agency, and I had the honor of developing a beautiful website for them. I utilized WordPress, Elementor, Slider Revolution, and my Adobe Photoshop skills to create the site. Additionally, I designed numerous social media posters for the agency.",
+    link: "https://bytemates.com/",
   },
   {
     category: "web",
