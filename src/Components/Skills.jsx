@@ -38,21 +38,20 @@ const Skills = () => {
     <div id="skills" className="max-w-7xl mx-auto mt-28 mb-8">
       <HeadingStyle1 black={true} text1={"My"} text2={"Skills"} />
       <div className="flex gap-3 p-4 sm:p-0 sm:gap-12 flex-wrap justify-center">
+        <SkillItem name={"JavaScript"} image={js} />
+        <SkillItem name={"TypeScript"} image={ts} />
+        <SkillItem name={"ES6"} image={es6} />
+        <SkillItem name={"React JS"} image={react} />
+        <SkillItem name={"Node JS"} image={node} />
+        <SkillItem name={"Express JS"} image={express} />
+        <SkillItem name={"Mongo DB"} image={mongodb} />
+        <SkillItem name={"Redux Toolkit"} image={redux} />{" "}
         <SkillItem name={"HTML"} image={html} />
         <SkillItem name={"CSS"} image={css} />
         <SkillItem name={"SCSS"} image={scss} />
         <SkillItem name={"Bootstrap"} image={bootstrap} />
         <SkillItem name={"Material Ui"} image={material} />
         <SkillItem name={"Tailwind CSS"} image={tailwind} />
-        <SkillItem name={"JavaScript"} image={js} />
-        <SkillItem name={"TypeScript"} image={ts} />
-        <SkillItem name={"ES6"} image={es6} />
-
-        <SkillItem name={"React JS"} image={react} />
-        <SkillItem name={"Node JS"} image={node} />
-        <SkillItem name={"Express JS"} image={express} />
-        <SkillItem name={"Mongo DB"} image={mongodb} />
-        <SkillItem name={"Redux Toolkit"} image={redux} />
         <SkillItem name={"Axios"} image={axios} />
         <SkillItem name={"Ether.Js"} image={ether} />
         <SkillItem name={"Ethereum"} image={eth} />
