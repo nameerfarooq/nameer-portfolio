@@ -3,7 +3,6 @@ import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-  FaPhone,
   FaWhatsapp,
 } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
@@ -11,7 +10,8 @@ import shineblack from "../assets/icons/shineblack.png";
 import shinewhite from "../assets/icons/shinewhite.png";
 import hero from "../assets/hero.mp4";
 import { TypeAnimation } from "react-type-animation";
-import { FaUpwork, FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import VideoComponent from "./VideoComponent";
 const HeroSection = () => {
   return (
     <>
@@ -69,7 +69,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub size={22}/>
+                <FaGithub size={22} />
               </a>
             </div>
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
@@ -79,7 +79,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaEnvelope size={22}/>{" "}
+                <FaEnvelope size={22} />{" "}
               </a>
             </div>
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
@@ -89,7 +89,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaWhatsapp size={22}/>{" "}
+                <FaWhatsapp size={22} />{" "}
               </a>
             </div>
 
@@ -100,7 +100,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaXTwitter size={22}/>
+                <FaXTwitter size={22} />
               </a>
             </div>
 
@@ -111,15 +111,13 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
               >
                 {" "}
-                <FaBehance size={22}/>{" "}
+                <FaBehance size={22} />{" "}
               </a>
             </div>
           </div>
         </div>
         <div className="flex items-center flex-1 justify-center mx-auto min-w-[270px]">
-          <video autoPlay loop muted className="flip-horizontal">
-            <source src={hero} type="video/mp4" />
-          </video>
+          <VideoComponent hero={hero} />
         </div>
       </div>
       <div>
