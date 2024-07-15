@@ -1,4 +1,3 @@
-import HeadingStyle1 from "./HeadingStyleBlack.jsx";
 import { HoverImageLinks } from "./HoverImageLinks.jsx";
 
 const Acheivements = () => {

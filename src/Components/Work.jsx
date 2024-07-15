@@ -1,5 +1,5 @@
 import Project from "./Project";
-import realEstate from "../assets/images/a.jpeg";
+import realEstate from "../assets/images/realestate.webp";
 import greener from "../assets/images/greener.webp";
 import artizia from "../assets/images/ARTIZIA.webp";
 import dashboard from "../assets/images/DASHBOARD-UI.webp";

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FiDownload, FiLock } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const FancyButton = () => {

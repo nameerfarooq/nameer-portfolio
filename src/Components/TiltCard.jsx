@@ -6,7 +6,6 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import background from "../assets/images/a.jpeg";
 const Card = ({ image }) => {
   return (
     <div className="grid w-full place-content-center">

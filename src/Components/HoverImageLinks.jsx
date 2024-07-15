@@ -1,17 +1,21 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import HeadingStyle1 from "./HeadingStyleBlack";
-import webcert from "../assets/images/webcert.jpg";
-import jira from "../assets/images/jira.jpeg";
-import postman from "../assets/images/postmancert.jpg";
-import git from "../assets/images/gitcert.jpg";
-import photoshop from "../assets/images/cert3.jpeg";
-import flash from "../assets/images/cert4.jpeg";
-import excel from "../assets/images/cert2.jpeg";
-import cit from "../assets/images/cert1.jpeg";
-import uit from "../assets/images/uit.jpeg";
+import webcert from "../assets/images/html.webp";
+import jira from "../assets/images/jira.webp";
+import postman from "../assets/images/postman.webp";
+import git from "../assets/images/git.webp";
+import photoshop from "../assets/images/photoshop.webp";
+import flash from "../assets/images/flash.webp";
+import excel from "../assets/images/excel.webp";
+import cit from "../assets/images/cit.webp";
+import uit from "../assets/images/uit.webp";
+import oop from "../assets/images/OOP.webp";
+import freelancing from "../assets/images/freelancing.webp";
+import domino from "../assets/images/domino.webp";
 import { Navigate, useNavigate } from "react-router-dom";
 import { FaCross, FaRegWindowClose, FaWindowClose } from "react-icons/fa";
 export const HoverImageLinks = () => {
@@ -34,7 +38,7 @@ export const HoverImageLinks = () => {
           <div className="max-w-7xl max-h-screen">
             <img
               src={imgSrc}
-              className=" w-full h-auto object-contain"
+              className=" w-full h-auto object-contain max-h-[95vh]"
               alt=""
             />
           </div>
@@ -51,18 +55,30 @@ export const HoverImageLinks = () => {
             subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
             imgSrc={webcert}
             handleImg={handleImg}
+            id={"01"}
           />
           <Link
             heading="Jira"
             subheading="Get started with Jira by coursera"
             imgSrc={jira}
             handleImg={handleImg}
+            id={"02"}
           />
           <Link
             heading="Postman"
             subheading="Introduction to API testing with Postman by 10 pearls"
             imgSrc={postman}
             handleImg={handleImg}
+            id={"03"}
+
+          />
+          <Link
+            heading="OOP(Python)"
+            subheading="Fundamentals of Object Oriented Programming with Python"
+            imgSrc={oop}
+            handleImg={handleImg}
+            id={"04"}
+
           />
 
           <Link
@@ -70,6 +86,16 @@ export const HoverImageLinks = () => {
             subheading="Secured 2nd position in ICT project exhibition at UIT"
             imgSrc={uit}
             handleImg={handleImg}
+            id={"05"}
+
+          />
+          <Link
+            heading="Freelancing"
+            subheading="Freelancing course by DigiSkills.pk"
+            imgSrc={freelancing}
+            handleImg={handleImg}
+            id={"06"}
+
           />
 
           <Link
@@ -77,30 +103,48 @@ export const HoverImageLinks = () => {
             subheading="CIT from SBTE (Sindh board of technical education)"
             imgSrc={cit}
             handleImg={handleImg}
+            id={"07"}
+
           />
           <Link
             heading="GIT"
             subheading="GIT Fundamentals by 10 pearls"
             imgSrc={git}
             handleImg={handleImg}
+            id={"08"}
+
           />
           <Link
             heading="Photoshop"
             subheading="1st position in Adobe PhotoShop's internal examination by GCI"
             imgSrc={photoshop}
             handleImg={handleImg}
+            id={"09"}
+
           />
           <Link
             heading="MS Excel"
             subheading="1st position in MS EXCEL's internal examination by GCI"
             imgSrc={excel}
             handleImg={handleImg}
+            id={"10"}
+
+          />
+          <Link
+            heading="English Language"
+            subheading="Intermediate English Language course by Domino (DELC)"
+            imgSrc={domino}
+            handleImg={handleImg}
+            id={"11"}
+
           />
           <Link
             heading="Flash"
             subheading="1st position in Flash's internal examination by GCI"
             imgSrc={flash}
             handleImg={handleImg}
+            id={"12"}
+
           />
         </div>
         <br />
@@ -111,7 +155,7 @@ export const HoverImageLinks = () => {
   );
 };
 
-const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
+const Link = ({ heading, imgSrc, subheading, href, handleImg,id }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -163,7 +207,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg }) => {
           }}
           className="relative z-10 w-[120%] sm:w-100% block text-xl sm:text-4xl font-bold text-white transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
         >
-          {heading.split("").map((l, i) => (
+         <span className="text-zinc-600">{id}</span> {heading.split("").map((l, i) => (
             <motion.span
               variants={{
                 initial: { x: 0 },

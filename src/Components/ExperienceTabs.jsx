@@ -3,13 +3,8 @@ import { FiBarChart, FiBell, FiPlay } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./useWindowSize";
 import { useState } from "react";
-import one from "../assets/images/1.jpg";
-import two from "../assets/images/2.jpg";
-import three from "../assets/images/3.jpg";
-import five from "../assets/images/5.jpg";
-import four from "../assets/images/4.jpg";
-import six from "../assets/images/6.jpg";
-import background from "../assets/images/background.jpg";
+
+import background from "../assets/images/background.webp";
 const ExperienceTabs = () => {
   const [open, setOpen] = useState(items[0].id);
 
