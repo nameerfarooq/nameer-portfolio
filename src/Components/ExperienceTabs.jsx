@@ -70,6 +70,7 @@ const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
               backgroundImage: `url(${imgSrc})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
+              backgroundColor: "black",
             }}
             className="w-full h-full overflow-hidden relative bg-black flex items-end"
           >
