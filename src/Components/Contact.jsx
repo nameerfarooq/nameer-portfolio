@@ -2,6 +2,7 @@ import { FaDownLong } from "react-icons/fa6";
 import bulb from "../assets/images/bulb.gif";
 import HeadingStyle1 from "./HeadingStyleBlack";
 import { motion } from "framer-motion";
+import VisitorCount from "./VisitorCount";
 export const RevealLinks = () => {
   return (
     <section className="place-content-center gap-4 flex flex-wrap sm:flex-row flex-col items-center justify-center">
@@ -100,6 +101,7 @@ const Contact = () => {
           <div className="py-6 px-12  bg-white rounded-lg">
             <RevealLinks />
           </div>
+          <VisitorCount />
         </div>
       </div>
     </div>
