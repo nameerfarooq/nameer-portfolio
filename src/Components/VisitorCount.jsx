@@ -21,9 +21,13 @@ const VisitorCount = () => {
     }
   }, []);
   return (
-    <div className="rounded-lg py-3 px-6 mx-auto my-4 bg-white text-black">
-      <span className="font-black"> {count}</span> people visited
-    </div>
+    <>
+      {count > 0 && (
+        <div className="rounded-lg py-3 px-6 mx-auto my-4 bg-white text-black">
+          <span className="font-black"> {count}</span> people visited
+        </div>
+      )}
+    </>
   );
 };
 
