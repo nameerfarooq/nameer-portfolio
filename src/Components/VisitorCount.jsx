@@ -24,7 +24,7 @@ const VisitorCount = () => {
     <>
       {count > 0 && (
         <div className="rounded-lg py-3 px-6 mx-auto my-4 bg-white text-black">
-          <span className="font-black"> {count}</span> people visited
+          <span className="font-bold"> {count}</span> people visited
         </div>
       )}
     </>
