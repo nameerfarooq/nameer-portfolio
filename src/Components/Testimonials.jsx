@@ -92,7 +92,7 @@ const cards = [
     name: "Bilal",
     designation: "CEO @Greener Pakistan",
     testimonial:
-      "Nameer did a great job with our website, delivering on time and meeting all our needs. Highly professional and easy to work with .",
+      "Nameer did a great job with our website, delivering on time and meeting all our needs. Highly professional and easy to work with.",
   },
   {
     name: "Syed Daniyal Zaidi",
