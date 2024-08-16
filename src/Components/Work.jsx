@@ -87,7 +87,7 @@ const projectsArray = [
     image: pmbotics,
     title: "PMBOTICS",
     description:
-      "PMBOTICS is my final year project during which i created during last two semesters of my graduation, This project was proposed to solve the hurdles and difficulties of universities which they face while managing student's FYP's. This project handles all stages of a FYP from initiating a project, managing milestones, creating sprint, creating tasks and awarding scores to students. to use this system as a supervisor use these credentials, username: nameerfaooq18@gmail.com, password:abcabcabc",
+      "PMBOTICS is my final year project during which i created during last two semesters of my graduation, This project was proposed to solve the hurdles and difficulties of universities which they face while managing student's FYP's. This project handles all stages of a FYP from initiating a project, managing milestones, creating sprint, creating tasks and awarding scores to students. to use this system as a supervisor use these credentials, username: pmboticss@gmail.com, password:admin-123",
 
     link: "https://pmbotics.netlify.app/",
   },
