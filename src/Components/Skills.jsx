@@ -16,6 +16,7 @@ import express from "../assets/icons/express.webp";
 import node from "../assets/icons/node.webp";
 import mongodb from "../assets/icons/mongodb.webp";
 import react from "../assets/icons/react.webp";
+import nextjs from "../assets/icons/nextjs.webp";
 import redux from "../assets/icons/redux.webp";
 import vscode from "../assets/icons/vscode.webp";
 import office from "../assets/icons/office.webp";
@@ -41,6 +42,7 @@ const Skills = () => {
         <SkillItem name={"TypeScript"} image={ts} />
         <SkillItem name={"ES6"} image={es6} />
         <SkillItem name={"React JS"} image={react} />
+        <SkillItem name={"Next JS"} image={nextjs} />
         <SkillItem name={"Node JS"} image={node} />
         <SkillItem name={"Express JS"} image={express} />
         <SkillItem name={"Mongo DB"} image={mongodb} />
