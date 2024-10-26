@@ -12,7 +12,7 @@ const Project = ({ data, id, reversed }) => {
           : "flex flex-wrap md:flex-nowrap"
       } gap-12 flex items-center p-2 sm:p-0 `}
     >
-      <div className="rounded-3xl  h-auto p-3 w-full md:w-6/12">
+      <div className="  h-auto p-3 w-full md:w-6/12">
         <a href={link} target="_blank">
           <Card image={image} />
         </a>

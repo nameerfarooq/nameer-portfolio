@@ -98,7 +98,7 @@ const Contact = () => {
             </div>
           </div>
           <FaDownLong size={40} />
-          <div className="py-6 px-12  bg-white rounded-lg">
+          <div className="py-6 px-12  bg-white ">
             <RevealLinks />
           </div>
           <VisitorCount />

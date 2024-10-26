@@ -54,7 +54,7 @@ const HeroSection = () => {
             new freelance collaborations to showcase my expanding expertise.
           </div>
           <div className="socials flex gap-2 sm:gap-3 items-center flex-wrap sm:flex-nowrap">
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://www.linkedin.com/in/muhammad-nameer/"
                 target="_blank"
@@ -63,7 +63,7 @@ const HeroSection = () => {
                 <FaLinkedin size={22} />
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://github.com/nameerfarooq"
                 target="_blank"
@@ -72,7 +72,7 @@ const HeroSection = () => {
                 <FaGithub size={22} />
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="mailto:nameerfarooq18@gmail.com"
                 target="_blank"
@@ -82,7 +82,7 @@ const HeroSection = () => {
                 <FaEnvelope size={22} />{" "}
               </a>
             </div>
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://wa.me/+923352418380"
                 target="_blank"
@@ -93,7 +93,7 @@ const HeroSection = () => {
               </a>
             </div>
 
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://x.com/NameerFarooq18"
                 target="_blank"
@@ -104,7 +104,7 @@ const HeroSection = () => {
               </a>
             </div>
 
-            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon rounded w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
+            <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
               <a
                 href="https://www.behance.net/nameerfarooq?tracking_source=search_projects%7Cnameerfarooq"
                 target="_blank"

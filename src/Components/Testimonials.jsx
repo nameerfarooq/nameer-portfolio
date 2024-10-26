@@ -37,7 +37,7 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   const { name, designation, testimonial } = card;
   return (
-    <div className=" transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[520px] w-[270px] sm:h-[550px] sm:w-[450px] rounded-3xl p-4 bg-black text-white flex flex-col justify-center items-center overflow-hidden">
+    <div className=" transition-all ease-in-out duration-300 hover:cursor-pointer relative h-[520px] w-[270px] sm:h-[550px] sm:w-[450px]  p-4 bg-black text-white flex flex-col justify-center items-center overflow-hidden">
       <span className="absolute top-5 left-5">
         <FaQuoteLeft />
       </span>

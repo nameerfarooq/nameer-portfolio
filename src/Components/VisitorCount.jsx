@@ -24,7 +24,7 @@ const VisitorCount = () => {
   return (
     <>
       {count > 0 && (
-        <div className="rounded-lg py-3 px-6 mx-auto mt-4 bg-white text-black flex flex-col gap-4 items-center justify-center">
+        <div className="py-3 px-6 mx-auto mt-4 bg-white text-black flex flex-col gap-4 items-center justify-center">
           <img src={eyegif} alt="eye gif" />
           <div>
             <span className="font-bold"> {count}</span> people visited

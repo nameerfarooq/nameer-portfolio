@@ -60,19 +60,20 @@ const TiltCard = ({ image }) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative w-[270px] h-[200px] sm:w-[380px] sm:h-[240px] lg:h-[400px] lg:w-[500px]  rounded-xl"
+      className="relative w-[270px] h-[200px] sm:w-[380px] sm:h-[240px] lg:h-[400px] lg:w-[500px]"
     >
       <div
         style={{
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute  grid place-content-center rounded-xl shadow-lg"
+        className="absolute  grid place-content-center  shadow-lg"
       >
         <img
+          // eslint-disable-next-line no-undef
           src={image ? image : background}
           alt=""
-          className="w-full h-auto object-cover cursor-pointer rounded-3xl"
+          className="w-full h-auto object-cover cursor-pointer"
         />
       </div>
     </motion.div>

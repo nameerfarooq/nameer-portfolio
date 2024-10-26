@@ -190,10 +190,10 @@ const Work = () => {
     <div id="work" className="mx-auto my-12 mt-32 bg-black py-24 text-white">
       <HeadingStyle1 black={false} text1={"My"} text2={"Work"} />
 
-      <div className="text-xs sm:text-xl rounded-full p-2 flex flex-wrap bg-white text-black w-max mx-auto">
+      <div className="text-xs sm:text-xl p-2 flex flex-wrap bg-white text-black w-max mx-auto">
         <div
           onClick={() => setActiveTab(0)}
-          className={`rounded-full py-2  px-2 sm:px-4  cursor-pointer ${
+          className={` py-2  px-2 sm:px-4  cursor-pointer ${
             activeTab === 0 && "bg-black text-white"
           }`}
         >
@@ -201,7 +201,7 @@ const Work = () => {
         </div>
         <div
           onClick={() => setActiveTab(1)}
-          className={`rounded-full py-2 px-2 sm:px-4  cursor-pointer ${
+          className={` py-2 px-2 sm:px-4  cursor-pointer ${
             activeTab === 1 && "bg-black text-white"
           }`}
         >
@@ -209,7 +209,7 @@ const Work = () => {
         </div>
         <div
           onClick={() => setActiveTab(2)}
-          className={`rounded-full py-2 px-2 sm:px-4  cursor-pointer ${
+          className={`py-2 px-2 sm:px-4  cursor-pointer ${
             activeTab === 2 && "bg-black text-white"
           }`}
         >
@@ -234,7 +234,7 @@ const Work = () => {
         {filteredProjects.length > 6 && (
           <button
             onClick={() => setShowALl(!showAll)}
-            className="border rounded-full py-2 px-4 mx-auto min-w-max bg-white text-black hover:scale-110 transition-all duration-300 ease-in-out "
+            className="border py-2 px-4 mx-auto min-w-max bg-white text-black hover:scale-110 transition-all duration-300 ease-in-out "
           >
             {showAll ? "Hide some" : "Show All"}
           </button>

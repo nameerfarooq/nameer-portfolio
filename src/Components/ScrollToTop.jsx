@@ -33,7 +33,7 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <a href="#top" onClick={scrollToTop}>
-          <div className="fixed bottom-10 right-10 bg-black text-white rounded-md cursor-pointer border-2 border-white w-[50px] h-[60px] flex items-center justify-center">
+          <div className="fixed bottom-10 right-10 bg-black text-white  cursor-pointer border-2 border-white w-[50px] h-[60px] flex items-center justify-center">
             <FaUpLong size={25} />
           </div>
         </a>

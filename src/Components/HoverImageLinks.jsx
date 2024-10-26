@@ -239,7 +239,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg,id }) => {
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+        className="absolute z-0 h-24 w-32  object-cover md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
       />
 
