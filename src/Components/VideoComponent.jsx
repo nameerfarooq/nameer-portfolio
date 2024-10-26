@@ -29,10 +29,10 @@ const VideoComponent = ({ hero }) => {
           {/* For variant="text", adjust the height via font-size */}
           <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
 
-          <Skeleton variant="rounded" width={250} height={80} />
+          <Skeleton variant="rounded" width={582} height={198} />
           <Skeleton variant="text" sx={{ fontSize: "1rem" }} />
 
-          <Skeleton variant="rounded" width={250} height={80} />
+          <Skeleton variant="rounded" width={582} height={198} />
         </Stack>
       )}
       <video
