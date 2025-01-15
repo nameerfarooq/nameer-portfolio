@@ -140,7 +140,21 @@ const desc1 = (
     </div>
   </div>
 );
+
 const desc2 = (
+  <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-xl sm:text-2xl font-semibold">
+      MERN Stack trainer @UIT University
+    </div>
+    <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
+      Nov 2024 - Present
+    </div>
+    <div className="text-slate-400 ">
+      Teaching MERN Stack developement course in weekend classes at UIT University
+    </div>
+  </div>
+);
+const desc4 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       Frontend Developer @Stallyons
@@ -155,7 +169,7 @@ const desc2 = (
     </div>
   </div>
 );
-const desc3 = (
+const desc6 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       Frontend Developer @Pluton.ltd
@@ -170,7 +184,7 @@ const desc3 = (
     </div>
   </div>
 );
-const desc4 = (
+const desc7 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       Frontend Developer @TheFourC's
@@ -184,7 +198,7 @@ const desc4 = (
     </div>
   </div>
 );
-const desc5 = (
+const desc3 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">Freelance Developer</div>
     <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
@@ -197,7 +211,7 @@ const desc5 = (
     </div>
   </div>
 );
-const desc6 = (
+const desc5 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       IT Trainer @PIMS Computer Institute
@@ -224,37 +238,44 @@ const items = [
   },
   {
     id: 2,
-    title: "Freelance Developer",
-    Icon: FiPlay,
-    imgSrc: background,
-    description: desc5,
-  },
-  {
-    id: 3,
-    title: "Frontend Developer @Stallyons",
+    title: "MERN Trainer @UIT University",
     Icon: FiPlay,
     imgSrc: background,
     description: desc2,
   },
   {
-    id: 4,
-    title: "IT Trainer @PIMS",
+    id: 3,
+    title: "Freelance Developer",
     Icon: FiPlay,
-    imgSrc: background,
-    description: desc6,
-  },
-  {
-    id: 5,
-    title: "Frontend Developer @Pluton.ltd",
-    Icon: FiBell,
     imgSrc: background,
     description: desc3,
   },
   {
+    id: 4,
+    title: "Frontend Developer @Stallyons",
+    Icon: FiPlay,
+    imgSrc: background,
+    description: desc4,
+  },
+  {
+    id: 5,
+    title: "IT Trainer @PIMS",
+    Icon: FiPlay,
+    imgSrc: background,
+    description: desc5,
+  },
+  {
     id: 6,
+    title: "Frontend Developer @Pluton.ltd",
+    Icon: FiBell,
+    imgSrc: background,
+    description: desc6,
+  },
+  {
+    id: 7,
     title: "Frontend Developer @TheFourC's",
     Icon: FiBarChart,
     imgSrc: background,
-    description: desc4,
+    description: desc7,
   },
 ];

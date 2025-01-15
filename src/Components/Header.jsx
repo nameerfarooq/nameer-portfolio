@@ -1,7 +1,7 @@
 import FancyButton from "./FancyButton";
-import resume from "../assets/Nameer (React Js + MERN).pdf";
+import resume from "../assets/Nameer - REACT & MERN Stack.pdf";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import HeaderDrawer from "./HeaderDrawer";
 

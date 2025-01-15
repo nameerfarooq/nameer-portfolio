@@ -136,6 +136,7 @@ const HeroSection = () => {
             <img width={20} src={shinewhite} alt="" /> PYTHON{" "}
             <img width={20} src={shinewhite} alt="" /> C#{" "}
             <img width={20} src={shinewhite} alt="" /> REACT JS{" "}
+            <img width={20} src={shinewhite} alt="" /> NEXT JS{" "}
             <img width={20} src={shinewhite} alt="" /> NODE JS{" "}
             <img width={20} src={shinewhite} alt="" /> EXPRESS JS{" "}
             <img width={20} src={shinewhite} alt="" /> MONGO DB{" "}
@@ -182,6 +183,7 @@ const HeroSection = () => {
             <img width={20} src={shineblack} alt="" /> PYTHON{" "}
             <img width={20} src={shineblack} alt="" /> C#{" "}
             <img width={20} src={shineblack} alt="" /> REACT JS{" "}
+            <img width={20} src={shineblack} alt="" /> NEXT JS{" "}
             <img width={20} src={shineblack} alt="" /> NODE JS{" "}
             <img width={20} src={shineblack} alt="" /> EXPRESS JS{" "}
             <img width={20} src={shineblack} alt="" /> MONGO DB{" "}

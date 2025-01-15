@@ -2,6 +2,7 @@ import Project from "./Project";
 import realEstate from "../assets/images/realestate.webp";
 import greener from "../assets/images/greener1.webp";
 import artizia from "../assets/images/ARTIZIA.webp";
+import pumpkin from "../assets/images/pumpkin.webp";
 import dashboard from "../assets/images/DASHBOARD-UI.webp";
 import tradepedia from "../assets/images/TRADEPEDIA.webp";
 import pmbotics from "../assets/images/PMBOTCS.webp";
@@ -20,6 +21,14 @@ import gci from "../assets/images/gci.webp";
 import { useEffect, useState } from "react";
 import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
+  {
+    category: "web",
+    image: pumpkin,
+    title: "Pumpkin DApp",
+    description:
+      "alpha.pumpkin.fun is a Web3 DApp built on Solana blockchain, The purpose of this project is to facililate web3 users to create their meme coins through our launchpad",
+    link: "https://alpha.pumpkin.fun/",
+  },
   {
     category: "web",
     image: greener,
@@ -45,7 +54,7 @@ const projectsArray = [
     description:
       "Artizia.io is an NFT marketplace dApp where users can create, buy, sell, or auction NFTs. I had the opportunity to work on this website while at Pluton Ltd. It was a great experience integrating our dApp with blockchain on the frontend.",
 
-    link: "http://artizia.io/",
+    // link: "http://artizia.io/",
   },
   {
     category: "web",
@@ -71,7 +80,7 @@ const projectsArray = [
     description:
       "ZeroSwap is a dapp which is used for exchanging tokens with the concept of self reapaying by the time. I Built this product's frontend using React Js and Scss. During development of this product, I learnt many things about web3 and learnt how to integrate smart contracts with our frontend dapps",
 
-    link: "https://swap.zeroliquid.xyz/",
+    // link: "https://swap.zeroliquid.xyz/",
   },
   {
     category: "web",
@@ -104,7 +113,7 @@ const projectsArray = [
     title: "Transitions Holistic Wellbeing",
     description:
       "Nuala Scott is a Certified TRE® (Tension & Trauma Releasing Exercises) Provider Health & Wellbeing Practitioner, I developed a website for thier business!",
-    link: "https://transitionsholisticwellbeing.com/",
+    // link: "https://transitionsholisticwellbeing.com/",
   },
   {
     category: "web",
@@ -112,7 +121,7 @@ const projectsArray = [
     title: "Noori Mission",
     description:
       "Noori Mission is a platform for teaching Quranic education globally via online platforms, I built their website so they could reach more students through their online presence.",
-    link: "https://noorimission.net/",
+    // link: "https://noorimission.net/",
   },
   {
     category: "web",

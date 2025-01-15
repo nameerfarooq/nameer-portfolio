@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import shineblack from "../assets/icons/shineblack.png";
+// import shineblack from "../assets/icons/shineblack.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import HeadingStyle1 from "./HeadingStyleBlack";
 const Example = () => {
@@ -81,6 +81,12 @@ const cards = [
     designation: "President of NIC",
     testimonial:
       "I am pleased to offer my enthusiastic endorsement of Mr. Nameer in light of his exceptional contributions to the development of our website for www.thenic.se, an esteemed Islamic society in Sweden. Based on the exemplary results demonstrated in this collaborative project, I wholeheartedly recommend Mr. Nameer for prospective engagements. His professionalism, expertise, and commitment to delivering high-quality outcomes are truly commendable. ",
+  },
+  {
+    name: "Tarik Abouali",
+    designation: "CEO @VoixLabs LLC",
+    testimonial:
+      "Nameer is an exceptional young man, and he is an asset to any business. Were extremely pleased with the results. He delivered as he said he would, and was very attentive to us. We have hired him to work on an ongoing basis, and I urge anyone who is considering him to go ahead and do it. you will not be disappointed.",
   },
   {
     name: "Arisha",
