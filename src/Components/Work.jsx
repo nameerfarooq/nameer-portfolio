@@ -23,14 +23,6 @@ import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
   {
     category: "web",
-    image: pumpkin,
-    title: "Pumpkin DApp",
-    description:
-      "alpha.pumpkin.fun is a Web3 DApp built on Solana blockchain, The purpose of this project is to facililate web3 users to create their meme coins through our launchpad",
-    link: "https://alpha.pumpkin.fun/",
-  },
-  {
-    category: "web",
     image: greener,
     title: "Greener Pakistan",
     description:
