@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import resume from "../assets/Nameer (React Js + MERN).pdf";
+import resume from "../assets/Muhammad Nameer - Software Engineer - MERN.pdf";
 import { useState } from "react";
 import FancyButton from "./FancyButton";
 
