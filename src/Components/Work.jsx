@@ -17,6 +17,8 @@ import encirkel from "../assets/images/ENCIRKEL.webp";
 import noorigd from "../assets/images/NOORIGD.webp";
 import bytematesgd from "../assets/images/BYTEMATESGD.webp";
 import pimsgd from "../assets/images/PIMSGD.webp";
+import claimhub from "../assets/images/CLAIMHUB.jpg";
+import kubeflux from "../assets/images/kubeflux.jpg";
 import gci from "../assets/images/gci.webp";
 import { useEffect, useState } from "react";
 import HeadingStyle1 from "./HeadingStyleBlack";
@@ -28,6 +30,22 @@ const projectsArray = [
     description:
       "Greener Pakistan is a group of solar energy experts offering a wide range of solar energy solutions, including underground cabling services. I developed their website using React JS, SCSS, and Framer Motion.",
     link: "https://greener.com.pk/",
+  },
+  {
+    category: "web",
+    image: kubeflux,
+    title: "Kubeflux",
+    description:
+      "Kubeflux is a project built with MERN stack, tailwind css and other tech. I worked on building this products Landing pages, dashboard application and API integrations",
+    link: "https://www.kubeflux.com",
+  },
+  {
+    category: "web",
+    image: claimhub,
+    title: "Claimhub",
+    description:
+      "Claimhub is a project built with MERN stack, tailwind css and other tech. I worked on building this products Landing pages, dashboard application and API integrations",
+    link: "https://claimhubnew.netlify.app",
   },
 
   {
