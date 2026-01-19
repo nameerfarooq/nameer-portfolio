@@ -1,10 +1,11 @@
 import FancyButton from "./FancyButton";
-import resume from "../assets/Muhammad Nameer-FullStack-Software Engineer-MERN.pdf";
+import resume from "../assets/MuhammadNameer-FullStack-SoftwareEngineer-MERN.pdf";
 
 import { useEffect, useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import HeaderDrawer from "./HeaderDrawer";
 
+// eslint-disable-next-line react/prop-types
 const AnimatedHamburgerButton = ({ open }) => {
   const [active, setActive] = useState(open);
   useEffect(() => {
