@@ -7,7 +7,9 @@
   position: relative;
   text-decoration: none;
 }
-
+.text-stroke {
+  text-shadow: 0px 0px 5px black;
+}
 .nav-items div::before {
   content: "";
   position: absolute;

@@ -25,7 +25,7 @@ const HeroSection = () => {
                 src="https://gifdb.com/images/high/waving-hand-black-and-white-erox5pacbap4ac1l.gif"
                 alt=""
               />{" "}
-              I'am{" "}
+              I&apos;am{" "}
             </div>
             <div className="text-3xl sm:text-4xl font-extrabold cursor-pointer">
               Muhammad Nameer
@@ -35,9 +35,9 @@ const HeroSection = () => {
                 sequence={[
                   "Software Engineer",
                   2000,
-                  "Frontend Developer",
-                  2000,
                   "Full Stack Developer",
+                  2000,
+                  "IT Trainer",
                   2000,
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 30 }}

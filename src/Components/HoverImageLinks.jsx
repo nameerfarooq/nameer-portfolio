@@ -5,6 +5,8 @@ import React, { useRef, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import HeadingStyle1 from "./HeadingStyleBlack";
 import webcert from "../assets/images/html.webp";
+import ssuet from "../assets/images/ssuet shield.webp";
+import uitAppreciationLetter from "../assets/images/UIT appreciation certificate.webp";
 import jira from "../assets/images/jira.webp";
 import postman from "../assets/images/postman.webp";
 import git from "../assets/images/git.webp";
@@ -51,25 +53,39 @@ export const HoverImageLinks = () => {
 
         <div className="mx-auto max-w-7xl mt-20 sm:mt-32">
           <Link
+            heading="Seminar byIEEE-SSUET"
+            subheading="Conducted a career counseling seminar at SSUET for computer science students."
+            imgSrc={ssuet}
+            handleImg={handleImg}
+            id={"01"}
+          />
+          <Link
+            heading="Appreciation Letter by UIT"
+            subheading="Conducted a FullStack development course at UIT University."
+            imgSrc={uitAppreciationLetter}
+            handleImg={handleImg}
+            id={"02"}
+          />
+          <Link
             heading="Web Development"
             subheading="HTML, CSS and JavaScript for web developers by 10 pearls"
             imgSrc={webcert}
             handleImg={handleImg}
-            id={"01"}
+            id={"03"}
           />
           <Link
             heading="Jira"
             subheading="Get started with Jira by coursera"
             imgSrc={jira}
             handleImg={handleImg}
-            id={"02"}
+            id={"04"}
           />
           <Link
             heading="Postman"
             subheading="Introduction to API testing with Postman by 10 pearls"
             imgSrc={postman}
             handleImg={handleImg}
-            id={"03"}
+            id={"05"}
 
           />
           <Link
@@ -77,7 +93,7 @@ export const HoverImageLinks = () => {
             subheading="Fundamentals of Object Oriented Programming with Python"
             imgSrc={oop}
             handleImg={handleImg}
-            id={"04"}
+            id={"06"}
 
           />
 
@@ -86,7 +102,7 @@ export const HoverImageLinks = () => {
             subheading="Secured 2nd position in ICT project exhibition at UIT"
             imgSrc={uit}
             handleImg={handleImg}
-            id={"05"}
+            id={"07"}
 
           />
           <Link
@@ -94,7 +110,7 @@ export const HoverImageLinks = () => {
             subheading="Freelancing course by DigiSkills.pk"
             imgSrc={freelancing}
             handleImg={handleImg}
-            id={"06"}
+            id={"08"}
 
           />
 
@@ -103,7 +119,7 @@ export const HoverImageLinks = () => {
             subheading="CIT from SBTE (Sindh board of technical education)"
             imgSrc={cit}
             handleImg={handleImg}
-            id={"07"}
+            id={"09"}
 
           />
           <Link
@@ -111,7 +127,7 @@ export const HoverImageLinks = () => {
             subheading="GIT Fundamentals by 10 pearls"
             imgSrc={git}
             handleImg={handleImg}
-            id={"08"}
+            id={"10"}
 
           />
           <Link
@@ -119,7 +135,7 @@ export const HoverImageLinks = () => {
             subheading="1st position in Adobe PhotoShop's internal examination by GCI"
             imgSrc={photoshop}
             handleImg={handleImg}
-            id={"09"}
+            id={"11"}
 
           />
           <Link
@@ -127,7 +143,7 @@ export const HoverImageLinks = () => {
             subheading="1st position in MS EXCEL's internal examination by GCI"
             imgSrc={excel}
             handleImg={handleImg}
-            id={"10"}
+            id={"12"}
 
           />
           <Link
@@ -135,7 +151,7 @@ export const HoverImageLinks = () => {
             subheading="Intermediate English Language course by Domino (DELC)"
             imgSrc={domino}
             handleImg={handleImg}
-            id={"11"}
+            id={"13"}
 
           />
           <Link
@@ -143,7 +159,7 @@ export const HoverImageLinks = () => {
             subheading="1st position in Flash's internal examination by GCI"
             imgSrc={flash}
             handleImg={handleImg}
-            id={"12"}
+            id={"14"}
 
           />
         </div>
@@ -205,7 +221,7 @@ const Link = ({ heading, imgSrc, subheading, href, handleImg,id }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 w-[120%] sm:w-100% block text-xl sm:text-4xl font-bold text-white transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 w-[120%] sm:w-100% block text-xl sm:text-4xl font-bold text-white text-shadow-md transition-colors duration-500 group-hover:text-neutral-50 text-stroke md:text-6xl"
         >
          <span className="text-zinc-600">{id}</span> {heading.split("").map((l, i) => (
             <motion.span
