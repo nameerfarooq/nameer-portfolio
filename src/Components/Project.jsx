@@ -14,7 +14,7 @@ const Project = ({ data, id, reversed }) => {
     >
       <div className="  h-auto p-3 w-full md:w-6/12">
         <a href={link} target="_blank">
-          <Card image={image} />
+          <Card image={image} isVideo={data.title == "Pumpkin.fun"}/>
         </a>
       </div>
       <div className="flex flex-col  gap-6 p-3 w-full md:w-6/122">

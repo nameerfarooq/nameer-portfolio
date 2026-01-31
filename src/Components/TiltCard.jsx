@@ -6,10 +6,11 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-const Card = ({ image }) => {
+import VideoComponent from "./VideoComponent";
+const Card = ({ image, isVideo }) => {
   return (
     <div className="grid w-full place-content-center">
-      <TiltCard image={image} />
+      <TiltCard image={image} isVideo={isVideo} />
     </div>
   );
 };
@@ -17,7 +18,7 @@ const Card = ({ image }) => {
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const TiltCard = ({ image }) => {
+const TiltCard = ({ image, isVideo }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -69,12 +70,16 @@ const TiltCard = ({ image }) => {
         }}
         className="absolute  grid place-content-center  shadow-lg"
       >
-        <img
-          // eslint-disable-next-line no-undef
-          src={image ? image : background}
-          alt=""
-          className="w-full h-auto object-cover cursor-pointer"
-        />
+        {isVideo ? (
+          <VideoComponent hero={image} />
+        ) : (
+          <img
+            // eslint-disable-next-line no-undef
+            src={image ? image : background}
+            alt=""
+            className="w-full h-auto object-cover cursor-pointer"
+          />
+        )}
       </div>
     </motion.div>
   );

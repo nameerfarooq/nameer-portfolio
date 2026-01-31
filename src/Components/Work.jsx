@@ -2,7 +2,7 @@ import Project from "./Project";
 import realEstate from "../assets/images/realestate.webp";
 import greener from "../assets/images/greener1.webp";
 import artizia from "../assets/images/ARTIZIA.webp";
-import pumpkin from "../assets/images/pumpkin.webp";
+import pumpkin from "../assets/pumpkin.webm";
 import dashboard from "../assets/images/DASHBOARD-UI.webp";
 import tradepedia from "../assets/images/TRADEPEDIA.webp";
 import pmbotics from "../assets/images/PMBOTCS.webp";
@@ -23,6 +23,14 @@ import gci from "../assets/images/gci.webp";
 import { useEffect, useState } from "react";
 import HeadingStyle1 from "./HeadingStyleBlack";
 const projectsArray = [
+  {
+    category: "web",
+    image: pumpkin,
+    title: "Pumpkin.fun",
+    description:
+      "Pumpkin is a game-changing protocol designed to revolutionize token launches by aligning the interests of creators and token holders. Through innovative features like fee sharing, pumpkin fund, and milestones, we drive sustainable growth and safeguard against rug pulls.",
+    link: "https://pumpkin.fun/",
+  },
   {
     category: "web",
     image: greener,

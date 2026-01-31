@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
+// eslint-disable-next-line react/prop-types
 const VideoComponent = ({ hero }) => {
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
