@@ -1,5 +1,5 @@
 import FancyButton from "./FancyButton";
-import resume from "../assets/MuhammadNameer-FullStack-SoftwareEngineer-MERN.pdf";
+import resume from "../assets/Muhammad-Nameer-FullStack-Software-Engineer-MERN.pdf";
 
 import { useEffect, useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
@@ -117,7 +117,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex-1 justify-end flex gap-3 items-center">
-          <a href={resume} target="_blank" download>
+          <a href={resume} target="_blank" download >
             <div className="resumeButton">
               <FancyButton />
             </div>
