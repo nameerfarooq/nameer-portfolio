@@ -13,7 +13,7 @@ import nuala from "../assets/images/NUALA.webp";
 import noorimission from "../assets/images/noorimission1.webp";
 import bytemates from "../assets/images/BYTE.webp";
 import thenic from "../assets/images/thenic1.webp";
-import encirkel from "../assets/images/ENCIRKEL.webp";
+import encirkel from "../assets/images/ENCIRKEL-project.webp";
 import noorigd from "../assets/images/NOORIGD.webp";
 import bytematesgd from "../assets/images/BYTEMATESGD.webp";
 import pimsgd from "../assets/images/PIMSGD.webp";
