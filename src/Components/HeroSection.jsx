@@ -37,6 +37,8 @@ const HeroSection = () => {
                   2000,
                   "Full Stack Developer",
                   2000,
+                  "Frontend Expert",
+                  2000,
                   "IT Trainer",
                   2000,
                 ]}
@@ -48,10 +50,12 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="about text-zinc-500">
-            Holding a BSCS degree from NED University, I specialize in frontend
-            development and am now venturing into full stack capabilities. I
-            thrive on creating exceptional digital experiences and am open to
-            new freelance collaborations to showcase my expanding expertise.
+            Holding a BSCS degree from NED University, I am a Senior Frontend
+            Engineer with 4+ years of experience specializing in React.js,
+            Next.js, TypeScript, and Backend. I build scalable, high-performance
+            applications and also work confidently across the MERN stack. I’m
+            passionate about crafting robust digital products and open to
+            impactful freelance and remote collaborations.
           </div>
           <div className="socials flex gap-2 sm:gap-3 items-center flex-wrap sm:flex-nowrap">
             <div className="transition-all duration-300 ease-in-out cursor-pointer social-icon  w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-black">
@@ -133,8 +137,8 @@ const HeroSection = () => {
             <img width={20} src={shinewhite} alt="" /> JAVASCRIPT{" "}
             <img width={20} src={shinewhite} alt="" /> ES6{" "}
             <img width={20} src={shinewhite} alt="" /> TYPESCRIPT{" "}
-            <img width={20} src={shinewhite} alt="" /> PYTHON{" "}
-            <img width={20} src={shinewhite} alt="" /> C#{" "}
+            {/* <img width={20} src={shinewhite} alt="" /> PYTHON{" "} */}
+            {/* <img width={20} src={shinewhite} alt="" /> C#{" "} */}
             <img width={20} src={shinewhite} alt="" /> REACT JS{" "}
             <img width={20} src={shinewhite} alt="" /> NEXT JS{" "}
             <img width={20} src={shinewhite} alt="" /> NODE JS{" "}
@@ -143,6 +147,7 @@ const HeroSection = () => {
             <img width={20} src={shinewhite} alt="" /> MONGOOSE
             <img width={20} src={shinewhite} alt="" /> REDUX TOOLKIT{" "}
             <img width={20} src={shinewhite} alt="" /> CONTEXT API{" "}
+            <img width={20} src={shinewhite} alt="" /> TANSTACK QUERY{" "}
             <img width={20} src={shinewhite} alt="" /> FETCH API{" "}
             <img width={20} src={shinewhite} alt="" /> AXIOS{" "}
             <img width={20} src={shinewhite} alt="" /> ETHER.JS
@@ -161,6 +166,7 @@ const HeroSection = () => {
             <img width={20} src={shinewhite} alt="" /> GITHUB{" "}
             <img width={20} src={shinewhite} alt="" /> NETLIFY{" "}
             <img width={20} src={shinewhite} alt="" /> AWS AMPLIFY{" "}
+            <img width={20} src={shinewhite} alt="" /> AWS EC2{" "}
             <img width={20} src={shinewhite} alt="" /> POSTMAN
             <img width={20} src={shinewhite} alt="" /> MS OFFICE{" "}
           </p>
@@ -180,8 +186,8 @@ const HeroSection = () => {
             <img width={20} src={shineblack} alt="" /> JAVASCRIPT{" "}
             <img width={20} src={shineblack} alt="" /> ES6{" "}
             <img width={20} src={shineblack} alt="" /> TYPESCRIPT{" "}
-            <img width={20} src={shineblack} alt="" /> PYTHON{" "}
-            <img width={20} src={shineblack} alt="" /> C#{" "}
+            {/* <img width={20} src={shineblack} alt="" /> PYTHON{" "}
+            <img width={20} src={shineblack} alt="" /> C#{" "} */}
             <img width={20} src={shineblack} alt="" /> REACT JS{" "}
             <img width={20} src={shineblack} alt="" /> NEXT JS{" "}
             <img width={20} src={shineblack} alt="" /> NODE JS{" "}
@@ -190,6 +196,7 @@ const HeroSection = () => {
             <img width={20} src={shineblack} alt="" /> MONGOOSE
             <img width={20} src={shineblack} alt="" /> REDUX TOOLKIT{" "}
             <img width={20} src={shineblack} alt="" /> CONTEXT API{" "}
+            <img width={20} src={shineblack} alt="" /> TANSTACK QUERY{" "}
             <img width={20} src={shineblack} alt="" /> FETCH API{" "}
             <img width={20} src={shineblack} alt="" /> AXIOS{" "}
             <img width={20} src={shineblack} alt="" /> ETHER.JS

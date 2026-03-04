@@ -43,17 +43,17 @@ const Skills = () => {
         <SkillItem name={"ES6"} image={es6} />
         <SkillItem name={"React JS"} image={react} />
         <SkillItem name={"Next JS"} image={nextjs} />
-        <SkillItem name={"Node JS"} image={node} />
-        <SkillItem name={"Express JS"} image={express} />
-        <SkillItem name={"Mongo DB"} image={mongodb} />
         <SkillItem name={"Redux Toolkit"} image={redux} />{" "}
+        <SkillItem name={"Tailwind CSS"} image={tailwind} />
         <SkillItem name={"HTML"} image={html} />
         <SkillItem name={"CSS"} image={css} />
         <SkillItem name={"SCSS"} image={scss} />
         <SkillItem name={"Bootstrap"} image={bootstrap} />
         <SkillItem name={"Material Ui"} image={material} />
-        <SkillItem name={"Tailwind CSS"} image={tailwind} />
         <SkillItem name={"Axios"} image={axios} />
+        <SkillItem name={"Node JS"} image={node} />
+        <SkillItem name={"Express JS"} image={express} />
+        <SkillItem name={"Mongo DB"} image={mongodb} />
         <SkillItem name={"Ether.Js"} image={ether} />
         <SkillItem name={"Ethereum"} image={eth} />
         <SkillItem name={"Solana"} image={solana} />

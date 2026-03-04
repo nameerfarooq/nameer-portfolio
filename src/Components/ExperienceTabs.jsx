@@ -128,15 +128,20 @@ const descriptionVariants = {
 const desc1 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
-      Software Engineer @Hashcore
+      Frontend Heavy Full Stack Developer @Hashcore
     </div>
     <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
       Nov 2023 - Present
     </div>
     <div className="text-slate-400 ">
-      I develop blockchain-based products using the MERN stack and Redux, create
-      frontend dApps, and manage project repositories and deployments while
-      continuously enhancing my blockchain and full stack development skills.
+      Led frontend development across multiple high-scale Web3 and DeFi
+      platforms, architecting scalable UI systems, real-time features, and
+      blockchain integrations using Next.js, React, TypeScript, and WebSockets,
+      GraphQL, Tailwind CSS while delivering production-ready deployments and
+      mentoring interns. Contributed to full-stack modules including API
+      integrations and backend optimization by implementing a Redis-based
+      caching layer to enhance data delivery performance, scalability, and
+      system reliability.
     </div>
   </div>
 );
@@ -147,40 +152,35 @@ const desc2 = (
       MERN Stack trainer @UIT University
     </div>
     <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
-      Nov 2024 - Present
+      Nov 2024 - Present (Weekend classes)
     </div>
     <div className="text-slate-400 ">
-      Teaching MERN Stack developement course in weekend classes at UIT University
+      Delivered industry-focused MERN Stack training at UIT University,
+      mentoring 100+ students from frontend fundamentals to building and
+      deploying production-grade React and Node.js applications. Designed
+      curriculum aligned with current market demands, emphasizing scalable
+      architecture, clean coding practices, API integration, Git workflows, and
+      real-world project execution to prepare students for professional software
+      engineering roles.
     </div>
   </div>
 );
-const desc4 = (
-  <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
-    <div className="text-xl sm:text-2xl font-semibold">
-      Frontend Developer @Stallyons
-    </div>
-    <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
-      Sep 2023 - Nov 2023
-    </div>
-    <div className="text-slate-400 ">
-      Created complex frontend applications using React.js and Redux, including
-      social media platforms, and had experience working with Webflow and
-      WordPress.
-    </div>
-  </div>
-);
+
 const desc6 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       Frontend Developer @Pluton.ltd
     </div>
     <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
-      May 2023 - Sep 2023
+      May 2023 - Nov 2023
     </div>
     <div className="text-slate-400 ">
-      Created complex frontend applications using React.js and Redux, including
-      frontend dapps for blockchain products, and utilized my WordPress skills
-      too.
+      Developed and scaled production-grade React.js applications including
+      complex marketplaces and high-conversion landing platforms, converting
+      Figma designs into pixel-perfect, reusable component-based architectures.
+      Implemented multi-language (i18n) and RTL support, optimized UI
+      performance, and built dynamic, interactive user experiences using modern
+      frontend best practices.
     </div>
   </div>
 );
@@ -250,29 +250,23 @@ const items = [
     imgSrc: background,
     description: desc3,
   },
+
   {
     id: 4,
-    title: "Frontend Developer @Stallyons",
-    Icon: FiPlay,
-    imgSrc: background,
-    description: desc4,
-  },
-  {
-    id: 5,
     title: "IT Trainer @PIMS",
     Icon: FiPlay,
     imgSrc: background,
     description: desc5,
   },
   {
-    id: 6,
+    id: 5,
     title: "Frontend Developer @Pluton.ltd",
     Icon: FiBell,
     imgSrc: background,
     description: desc6,
   },
   {
-    id: 7,
+    id: 6,
     title: "Frontend Developer @TheFourC's",
     Icon: FiBarChart,
     imgSrc: background,
