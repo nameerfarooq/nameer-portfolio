@@ -125,13 +125,31 @@ const descriptionVariants = {
   closed: { opacity: 0, y: "100%" },
 };
 
+const desc0 = (
+  <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
+    <div className="text-xl sm:text-2xl font-semibold">
+      Senior Software Engineer - Frontend @Krank
+    </div>
+    <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
+      March 2026 - Present
+    </div>
+    <div className="text-slate-400 ">
+      Developing and maintaining a global B2B SaaS platform for heavy equipment
+      inspections using Next.js, React, TypeScript, React Query, and Chakra UI.
+      Delivering AI-powered reporting, customizable inspection workflows, and
+      real-time remote inspection features while conducting code reviews,
+      mentoring junior developers, and ensuring high code quality through pull
+      request reviews.
+    </div>
+  </div>
+);
 const desc1 = (
   <div className=" bg-black text-white p-3 w-full mt-2 mb-2">
     <div className="text-xl sm:text-2xl font-semibold">
       Frontend Heavy Full Stack Developer @Hashcore
     </div>
     <div className="bg-transparent border-2 border-white  px-3 py-2 my-3 max-w-max">
-      Nov 2023 - Present
+      Nov 2023 - Feb 2026
     </div>
     <div className="text-slate-400 ">
       Led frontend development across multiple high-scale Web3 and DeFi
@@ -230,6 +248,14 @@ const desc5 = (
 const items = [
   {
     id: 1,
+    title: "Senior Software Engineer @Krank",
+    Icon: 1,
+    imgSrc: background,
+    description: desc0,
+    //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
+  },
+  {
+    id: 2,
     title: "Software Engineer @Hashcore",
     Icon: 1,
     imgSrc: background,
@@ -237,14 +263,14 @@ const items = [
     //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
   },
   {
-    id: 2,
+    id: 3,
     title: "MERN Trainer @UIT University",
     Icon: FiPlay,
     imgSrc: background,
     description: desc2,
   },
   {
-    id: 3,
+    id: 4,
     title: "Freelance Developer",
     Icon: FiPlay,
     imgSrc: background,
@@ -252,21 +278,21 @@ const items = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "IT Trainer @PIMS",
     Icon: FiPlay,
     imgSrc: background,
     description: desc5,
   },
   {
-    id: 5,
+    id: 6,
     title: "Frontend Developer @Pluton.ltd",
     Icon: FiBell,
     imgSrc: background,
     description: desc6,
   },
   {
-    id: 6,
+    id: 7,
     title: "Frontend Developer @TheFourC's",
     Icon: FiBarChart,
     imgSrc: background,

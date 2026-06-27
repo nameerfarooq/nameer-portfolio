@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 // import Button from "@mui/material/Button";
-import resume from "../assets/Muhammad-Nameer-Frontend-Heavy-Full-Stack-MERN.pdf";
+import resume from "../assets/SSE-Muhammad-Nameer.pdf";
 // import { useState } from "react";
 import FancyButton from "./FancyButton";
 

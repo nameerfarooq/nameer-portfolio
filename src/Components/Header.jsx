@@ -1,5 +1,5 @@
 import FancyButton from "./FancyButton";
-import resume from "../assets/Muhammad-Nameer-Frontend-Heavy-Full-Stack-MERN.pdf";
+import resume from "../assets/SSE-Muhammad-Nameer.pdf";
 
 import { useEffect, useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
