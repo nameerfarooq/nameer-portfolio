@@ -1,40 +1,60 @@
-import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
-import Skills from "./Components/Skills";
-import Experience from "./Components/Experience";
-import Work from "./Components/Work";
-import Clients from "./Components/Clients";
-import Testimonials from "./Components/Testimonials";
-import Acheivements from "./Components/Acheivements";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import ScrollToTop from "./Components/ScrollToTop";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { useEffect } from "react";
+import { MotionConfig } from "framer-motion";
+import { initSmoothScroll } from "./lib/scroll";
 
-const App = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
+import Preloader from "./ui/Preloader";
+import Cursor from "./ui/Cursor";
+import ScrollChrome from "./ui/ScrollChrome";
+import CommandPalette from "./ui/CommandPalette";
+import Toast from "./ui/Toast";
+
+import Nav from "./sections/Nav";
+import Hero from "./sections/Hero";
+import TechMarquee from "./sections/TechMarquee";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Experience from "./sections/Experience";
+import Work from "./sections/Work";
+import Clients from "./sections/Clients";
+import Achievements from "./sections/Achievements";
+import Testimonials from "./sections/Testimonials";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+
+export default function App() {
+  useEffect(() => initSmoothScroll(), []);
+
   return (
-    <div className="font-sora">
-      <Header />
-      <motion.div className="progress-bar" style={{ scaleX }} />
+    <MotionConfig reducedMotion="user">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-fg focus:px-4 focus:py-2 focus:text-bg"
+      >
+        Skip to content
+      </a>
 
-      <HeroSection />
-      <Skills />
-      <Experience />
-      <Work />
-      <Clients />
-      <Acheivements />
-      <Testimonials />
-      <Contact />
+      <Preloader />
+      <Cursor />
+      <ScrollChrome />
+      <Nav />
+
+      <main id="main">
+        <Hero />
+        <TechMarquee />
+        <About />
+        <Skills />
+        <Experience />
+        <Work />
+        <Clients />
+        <Achievements />
+        <Testimonials />
+        <Contact />
+      </main>
+
       <Footer />
-      <ScrollToTop />
-    </div>
+      <CommandPalette />
+      <Toast />
+      <div className="grain" aria-hidden="true" />
+    </MotionConfig>
   );
-};
-
-export default App;
+}
