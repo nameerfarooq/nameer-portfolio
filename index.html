@@ -1,16 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/shineblack.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Nameer - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Muhammad Nameer — Senior Frontend Engineer</title>
+    <meta
+      name="description"
+      content="Muhammad Nameer is a Senior Frontend Engineer building fast, scalable products with React, Next.js and TypeScript. SaaS, Web3 and full-stack MERN — open to freelance and remote collaborations."
+    />
+    <meta name="author" content="Muhammad Nameer" />
     <meta
       name="google-site-verification"
       content="cpFjLnGJ_l9pl6tWVT7vq8Pz-UOq5RpWwJLhaQZ_FXc"
     />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Nameer — Senior Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="React, Next.js & TypeScript engineer crafting fast, scalable products. Explore selected work, experience and testimonials."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@NameerFarooq18" />
+
+    <meta name="theme-color" content="#09090b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/shineblack.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Resolve the theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var theme =
+            saved ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.dataset.theme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "light" ? "#f4f3ef" : "#09090b");
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
+    <noscript>
+      <p style="padding: 24px; font-family: system-ui">
+        Muhammad Nameer — Senior Frontend Engineer. Please enable JavaScript to view this portfolio.
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
